@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('landing');
 });
+
+// '/document' name you want
+//  'Enrollment.documents' location
+Route::get('/documents', function () {
+    return view('Enrollment.documents');
+});

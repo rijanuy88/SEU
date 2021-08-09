@@ -34,7 +34,7 @@
                     <td>BS Computer Science</td>
                     <td>December 21, 2012</td>
                     <td>Passed</button>
-                    <td><button type="button" class="btn btn-primary">Submit Documents Here</button></td>
+                    <td><button type="button" class="btn btn-dark">Submit Documents</button></td>
                 </tr>
             </tbody>
              

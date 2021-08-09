@@ -1,13 +1,9 @@
 @extends('layouts.master')
 
-@section('title', 'Status')
-
+@section('title', 'Pre-Enlistment')
 
 @section('content')
- 
-    
-    <div class="div container">
-        
+    <div class="div container mx-auto" style="margin: 5%; width:60%">
         <form>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Last Name</label>
@@ -103,7 +99,7 @@
             </div>
 
             <div class="mb-3">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-dark">Submit</button>
             </div>
             
         </form>

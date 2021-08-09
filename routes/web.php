@@ -19,6 +19,15 @@ Route::get('/', function () {
 
 // '/document' name you want
 //  'Enrollment.documents' location
+
+Route::get('/pre-enlistment', function () {
+    return view('Enrollment.pre-enlistment');
+});
+
 Route::get('/documents', function () {
     return view('Enrollment.documents');
+});
+
+Route::get('/status', function () {
+    return view('Enrollment.status');
 });

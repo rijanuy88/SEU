@@ -34,8 +34,19 @@ Route::get('/documents', function () {
 Route::get('/status', function () {
     return view('Enrollment.status');
 });
-
+// employees
 Route::get('/apply', function () {
-    return view('Employee.Contactus');
+    return view('Employee.contactus');
+});
+
+// students
+Route::get('/dashboard', function () {
+    return view('Student.dashboard');
+});
+Route::get('/curriculum', function () {
+    return view('Student.curriculum');
+});
+Route::get('/account-balance', function () {
+    return view('Student.accountbalance');
 });
 

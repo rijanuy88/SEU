@@ -34,7 +34,7 @@
                     <td>BS Computer Science</td>
                     <td>December 21, 2012</td>
                     <td>Passed</button>
-                    <td><a href="/SEU/public/documents"><button type="button" class="btn btn-dark">Submit Documents</button></a></td>
+                    <td><a href="/SEU/public/documents"><button type="button" class="btn btn-custom">Submit Documents</button></a></td>
                 </tr>
             </tbody>
              

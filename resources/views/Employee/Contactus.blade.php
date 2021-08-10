@@ -90,7 +90,7 @@
                 </select>
             </div>
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-custom">Submit</button>
             </div>
         </form>
     </div>

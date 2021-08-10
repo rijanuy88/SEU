@@ -19,7 +19,7 @@
                 <label for="formFileDisabled" class="form-label">Medical Certificate</label>
                 <input class="form-control" type="file" id="formFile" required>
             </div>
-            <button type="submit" class="btn btn-dark">Submit</button>
+            <button type="submit" class="btn btn-custom">Submit</button>
         </form>
     </div>
 @endsection

@@ -13,7 +13,7 @@
         <table class="table table-bordered">
             <tbody>
                 <tr>
-                    <th width="18%">Applicant Number</th>
+                    <th width="25%">Applicant Number</th>
                     <td>123456</td>
                 </tr>
                 <tr>

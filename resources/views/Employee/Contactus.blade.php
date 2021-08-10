@@ -28,15 +28,15 @@
             </div>
             <div class="col-md-3">
                 <label for="inputPassword4" class="form-label">Landline</label>
-                <input type="password" class="form-control" id="password">
+                <input type="text" class="form-control" id="password">
             </div>
             <div class="col-md-3">
                 <label for="inputPassword4" class="form-label">Mobile Number</label>
-                <input type="password" class="form-control" id="mobileNum">
+                <input type="text" class="form-control" id="mobileNum">
             </div>
             <div class="col-md-3">
                 <label for="inputPassword4" class="form-label">Birthdate</label>
-                <input type="password" class="form-control" id="birthdate">
+                <input type="date" class="form-control" id="birthdate">
             </div>
             <div class="col-12">
                 <label for="inputAddress" class="form-label">Address</label>

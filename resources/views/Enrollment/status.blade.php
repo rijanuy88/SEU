@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Enrollment Status Card -->
-    <div class="card mx-auto" style="margin: 5%; width:60%">
+    <div class="card mx-auto d-block col-sm-6" style="margin:3%">
         <div class="card-header">
             <h5><b>Enrollment Status</b></h5>
         </div>
@@ -34,7 +34,7 @@
                     <td>BS Computer Science</td>
                     <td>December 21, 2012</td>
                     <td>Passed</button>
-                    <td><button type="button" class="btn btn-dark">Submit Documents</button></td>
+                    <td><a href="/SEU/public/documents"><button type="button" class="btn btn-dark">Submit Documents</button></a></td>
                 </tr>
             </tbody>
              

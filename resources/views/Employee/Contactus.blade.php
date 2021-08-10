@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'pre-enlistment')
+@section('title', 'contact-us')
 
 
 @section('content')
@@ -54,7 +54,7 @@
                 <input type="text" class="form-control" id="inputZip">
             </div>
             <div class="col-12">
-                <button type="submit" class="btn btn-dark">Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
     </div>

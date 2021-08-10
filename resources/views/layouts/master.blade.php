@@ -19,49 +19,66 @@
       .nav-link:hover, .nav-link:active, .nav-link:focus{
         color: #e19021;
       }
+      .nav-link-login{
+        color: white;
+        text-decoration: none;
+      }
+      .nav-link-login:hover{
+        color:#6a1717;
+      }
+          
+      .custom-toggler .navbar-toggler-icon {
+        background-image: url(
+        "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+      
 
       .btn-custom{
         background-color: #e19021;
+        color:white;
       }
+      
+      
+
     </style>
     <title>South East University | @yield('title')</title>
   
     @yield('styles')
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="assets/SEU Mini Logo.png" alt="" width="180" height="50">
-      </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/SEU/public/">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Enrollment
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="/SEU/public/pre-enlistment">Pre-Enlistment Form</a></li>
-                <li><a class="dropdown-item" href="/SEU/public/status">Enrollment Status</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="/SEU/public/documents">Documents Submission</a></li>
-            </ul>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-            </li>
-        </ul>
-        <span>
-            <button class="btn btn-custom"><b>Log in</b></button>
-        </span> 
-        </div>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/SEU/public/">
+          <img src="assets/SEU Mini Logo.png" alt="" width="180" height="50">
+        </a>
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/SEU/public/">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Enrollment
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/SEU/public/pre-enlistment">Pre-Enlistment Form</a></li>
+                  <li><a class="dropdown-item" href="/SEU/public/status">Enrollment Status</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/SEU/public/documents">Documents Submission</a></li>
+              </ul>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/SEU/public/apply">Contact Us</a>
+              </li>
+          </ul>
+          <span>
+                <a href="/SEU/public/login"><button type="button" class="btn btn-custom">Log in</button></a>
+          </span> 
+          </div>
+      </div>
     </nav>
     <!-- Optional JavaScript; choose one of the two! -->
 

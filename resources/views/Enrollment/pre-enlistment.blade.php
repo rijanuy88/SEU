@@ -83,12 +83,9 @@
                 </select>
             </div>
 
-            <div class="col-12">
-            <button type="button" onclick ="alert('Data Submitted!')" class="btn btn-dark">Submit</button>
-            </div>
-
-            <div class="col-12">
-            <a href="/SEU/public/status"><button type="button" class="btn btn-custom">Find Status</button></a>
+            <div class="col-12" style="padding-top:2%">
+                <button type="button" onclick ="alert('Data Submitted!')" class="btn btn-custom">Submit</button>
+                <a href="/SEU/public/status"><button type="button" class="btn btn-dark" disabled>Find Status</button></a>
             </div>
         </form>
     </div>

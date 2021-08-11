@@ -43,6 +43,7 @@ Route::get('/apply', function () {
 Route::get('/dashboard', function () {
     return view('Student.dashboard');
 });
+
 Route::get('/curriculum', function () {
     return view('Student.curriculum');
 });

@@ -1,8 +1,10 @@
-@extends('layouts.master')
+{{-- @extends('layouts.Studtabs') --}}
+@extends('layouts.stud')
 
 @section('title', 'stud-dashboard')
 
 @section('content')
+    
     <!-- Enrollment Status Card -->
     <div class="card mx-auto d-block col-sm-6" style="margin:3%">
         <div class="card-header">
@@ -43,3 +45,4 @@
 
     </div>
 @endsection
+

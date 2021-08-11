@@ -89,16 +89,16 @@
                     <a href="" class="text-reset">My Grades</a>
                 </li>
                 <li class="list-group-item py-1">
-                    <a href="" class="text-reset">My Account Balance</a>
+                    <a href="/SEU/public/account-balance" class="text-reset">My Account Balance</a>
                 </li>
                 <li class="list-group-item py-1">
-                    <a href="" class="text-reset">My Curriculum</a>
+                    <a href="/SEU/public/curriculum" class="text-reset">My Curriculum</a>
                 </li>
                 <li class="list-group-item py-1">
                     <a href="" class="text-reset">Class Offerings</a>
                 </li>
                 <li class="list-group-item py-1">
-                    <a href="" class="text-reset">Log out</a>
+                    <a href="/SEU/public/" class="text-reset">Log out</a>
                 </li>
                 </ul>
             </div>

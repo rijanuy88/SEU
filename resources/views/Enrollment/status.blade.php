@@ -18,7 +18,7 @@
                 </tr>
                 <tr>
                     <th>Applicant Name</th>
-                    <td>Seuss, Jacob L.</td>
+                    <td>Sy, Angela Rizza Lorraine G. III</td>
                 </tr>
             </tbody>
         </table>

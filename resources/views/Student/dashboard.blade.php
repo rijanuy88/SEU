@@ -3,46 +3,52 @@
 
 @section('title', 'stud-dashboard')
 
-@section('content')
-    
-    <!-- Enrollment Status Card -->
-    <div class="card mx-auto d-block col-sm-6" style="margin:3%">
-        <div class="card-header">
-            <h5><b>Enrollment Status</b></h5>
-        </div>
-        <div class="card-body">
-        <!-- Personal Info Table -->
-        <table class="table table-bordered">
-            <tbody>
-                <tr>
-                    <th width="18%">Applicant Number</th>
-                    <td>123456</td>
-                </tr>
-                <tr>
-                    <th>Applicant Name</th>
-                    <td>Seuss, Jacob L.</td>
-                </tr>
-            </tbody>
-        </table>
-        <table class ="table table-bordered">
-                <tr>
-                    <th>Preferred Program</th>
-                    <th>Schedule of Exam</th>
-                    <th>Status</th>
-                    <th>Remarks</th>
-                </tr>
-            <tbody>
-                <tr>
-                    <td>BS Computer Science</td>
-                    <td>December 21, 2012</td>
-                    <td>Passed</button>
-                    <td><a href="/SEU/public/documents"><button type="button" class="btn btn-dark">Submit Documents</button></a></td>
-                </tr>
-            </tbody>
-                
-        </table>
-        <!-- Status -->
+<style>
+    .card-body{
+        display: flex;
+    }
 
+    span{
+        margin-right: 5%;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+</style>
+
+@section('content')
+<div class="card w-75 mx-auto">
+    <div class="card-header text-white" style="background-color: #e19021">
+        ACADEMIC INFORMATION
     </div>
+    <div div class="card-body">
+        <img src="assets/icon.png" alt="" width="100" height="100" class="rounded-circle me-2">
+        <span>  
+            <ul>
+                <li style="color:gray">STUDENT NAME</li>
+                <li><h6>Sy, Angela Rizza Lorraine G. III</h6></li>
+                <li style="color:gray">STUDENT ID</li>
+                <li><h6>12345678</h6></li>
+            </ul>
+        </span>
+        <span>
+            <ul>
+                <li style="color:gray">COURSE</li>
+                <li><h6>BS Computer Science</h6></li>
+                <li style="color:gray">SECTION</li>
+                <li><h6>ComSci 3-A</h6></li>
+            </ul>
+        </span>
+        <span>
+            <ul>
+                <li style="color:gray">ACADEMIC PERIOD</li>
+                <li><h6>A.Y. 2021-2022, 1st Semester</h6></li>
+                <li style="color:gray">STATUS</li>
+                <li><h6>Enrolled</h6></li>
+            </ul>
+        </span>
+    </div>
+</div>
 @endsection
 

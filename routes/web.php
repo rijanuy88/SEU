@@ -31,6 +31,10 @@ Route::get('/documents', function () {
     return view('Enrollment.documents');
 });
 
+Route::get('/search', function () {
+    return view('Enrollment.searchstatus');
+});
+
 Route::get('/status', function () {
     return view('Enrollment.status');
 });

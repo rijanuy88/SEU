@@ -65,7 +65,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="/SEU/public/pre-enlistment">Pre-Enlistment Form</a></li>
-                  <li><a class="dropdown-item" href="/SEU/public/status">Enrollment Status</a></li>
+                  <li><a class="dropdown-item" href="/SEU/public/search">Enrollment Status</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="/SEU/public/documents">Documents Submission</a></li>
               </ul>

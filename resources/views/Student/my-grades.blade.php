@@ -27,7 +27,7 @@
     <div class="card-header text-white" style="background-color: #e19021">
         MY GRADES
     </div>
-    <div div class="card-body" style="overflow-x:auto;">
+    <div div class="card-body">
         <img src="assets/icon.png" alt="" width="100" height="100" class="rounded-circle me-2">
         <span>  
             <ul>
@@ -58,81 +58,116 @@
     </div>
 </div>
 
-<div>
-       &nbsp
-</div>
 
-<div class="card w-75 mx-auto" >
-<div class="card-header text-white" style="background-color: #e19021 ">
-        BS Computer Science Curriculum Year 2019
+    <div class = "col-12 w-75 mx-auto" style ="text-align: center" >
+        &nbsp
+        <table class = "table" >
+            <tr>
+                <td> 
+                    <div style ="text-align: center"  >
+                        <h1 style = "color: green">3.80</h1>
+                        <h5 style = "color: gray">ANNUAL QPI</h5>
+                    </div>
+                </td>
+                <td>
+                    <div style ="text-align: center" >
+                    <h1>14.0</h1>
+                    <h5 style = "color: gray">TOTAL CREDITS</h5>
+                </td>
+        </div>
+        </tr>
+        </table>
+        &nbsp
     </div>
-    <div class="card-body" style="overflow-x:auto;">
-    <table class="table" style="test-align: center">
 
+
+<div class="card w-75 mx-auto">
+    <div class="card-header text-white" style="background-color: #e19021 ">REPORT CARD </div>
+    <div class="card-body">
+
+    <table class="table" style="text-align: center">
         <thead>
             <tr>
-                <th scope="col" style="color:gray">YEAR LEVEL</th>
-                <th scope="col" style="color:gray">SEMESTER</th>
-                <th scope="col" style="color:gray">SUBJECT NAME</th>
+                <th scope="col" style="color:gray">CLASS CODE</th>
                 <th scope="col" style="color:gray">SUBJECT CODE</th>
-                <th scope="col" style="color:gray">PRE-REQUISITE</th>
+                <th scope="col" style="color:gray">SUBJECT NAME</th>
+                <th scope="col" style="color:gray">PRELIM</th>
+                <th scope="col" style="color:gray">MIDTERM</th>
+                <th scope="col" style="color:gray">FINALS</th>
                 <th scope="col" style="color:gray">CREDITS</th>
-                <th scope="col" style="color:gray">GRADE</th>
+                <th scope="col" style="color:gray">FINAL GRADE</th>
             </tr>
         </thead>
 
             <tr >
-                <td>1st Year</td>
-                <td>1st Semester</td>
+                <td>12-783</td>
+                <td>CS 1001</td>
                 <td>Intro to Computing</td>
-                <td>CS 1001</td>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td>3.0</td>
                 <td>A</td>
             </tr>
 
             <tr>
-                <td>1st Year</td>
-                <td>2nd Semester</td>
-                <td> Math in the Modern World</td>
-                <td> GE 1108</td>
+                <td>3-8912</td>
+                <td>CS 4312</td>
+                <td>Intro to Programming</td>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td>3.0</td>
-                <td>A</td>
-            </tr>
-
-            <tr  >
-                <td>2nd Year</td>
-                <td>1st Semester</td>
-                <td>Object-Oriented Programming</td>
-                <td>CS 2314</td>
-                <td>CS 1001</td>
-                <td>3.0</td>
-                <td>A</td>
-            </tr>
-
-            <tr>
-                <td>2nd Year</td>
-                <td>2nd Semester</td>
-                <td>Software Engineering 1</td>
-                <td>CS 2316</td>
-                <td>CS 2314</td>
-                <td>5.0</td>
                 <td>A</td>
             </tr>
 
             <tr >
-                <td>3rd Year</td>
-                <td>1st Semester</td>
-                <td>Software Engineering 2</td>
-                <td>CS 2317</td>
-                <td>CS 2316</td>
-                <td>5.0</td>
+                <td>16-616</td>
+                <td>GE 1104</td>
+                <td>Life and Works of Rizal</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>3.0</td>
+                <td>B+</td>
+            </tr>
+ 
+            
+            <tr >
+                <td>16-319</td>
+                <td>GE 1102</td>
+                <td>purposive Communication</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>3.0</td>
                 <td>A</td>
             </tr>
-   
+            
+            <tr >
+                <td>16-716</td>
+                <td>PE 3</td>
+                <td>PE 3: Basketball</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>2.0</td>
+                <td>D</td>
+            </tr>
+
+           
   </tbody>
-    </table>
+             <tr >
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th scope="row">14.0</td>
+                <th scope="row">B+</td>
+            </tr>
+</table>
 
 
 </div>

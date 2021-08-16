@@ -86,7 +86,7 @@
                         <a href="" class="text-reset">Home</a>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="" class="text-reset">My Registration</a>
+                        <a href="/SEU/public/dashboard" class="text-reset">My Registration</a>
                     </li>
                     <li class="list-group-item py-1">
                         <a href="/SEU/public/my-grades" class="text-reset">My Grades</a>
@@ -98,7 +98,7 @@
                         <a href="/SEU/public/curriculum" class="text-reset">My Curriculum</a>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="" class="text-reset">Class Offerings</a>
+                        <a href="/SEU/public/my-class-offerings" class="text-reset">Class Offerings</a>
                     </li>
                     <li class="list-group-item py-1">
                         <a href="/SEU/public/" class="text-reset">Log out</a>

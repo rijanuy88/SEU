@@ -62,3 +62,7 @@ Route::get('/account-balance', function () {
 Route::get('/my-grades', function () {
     return view('Student.my-grades');
 });
+
+Route::get('/my-class-offerings', function () {
+    return view('Student.my-class-offerings');
+});

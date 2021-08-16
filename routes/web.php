@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('landing');
 });
+Route::get('/404', function () {
+    return view('layouts.404');
+});
 
 // '/document' name you want
 //  'Enrollment.documents' location

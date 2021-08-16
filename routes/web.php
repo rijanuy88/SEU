@@ -54,7 +54,11 @@ Route::get('/dashboard', function () {
 Route::get('/curriculum', function () {
     return view('Student.curriculum');
 });
+
 Route::get('/account-balance', function () {
     return view('Student.accountbalance');
 });
 
+Route::get('/my-grades', function () {
+    return view('Student.my-grades');
+});

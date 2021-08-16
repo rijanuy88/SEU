@@ -102,7 +102,7 @@
                     <a href="" class="text-reset">My Registration</a>
                 </li>
                 <li class="list-group-item py-1">
-                    <a href="" class="text-reset">My Grades</a>
+                    <a href="/SEU/public/my-grades" class="text-reset">My Grades</a>
                 </li>
                 <li class="list-group-item py-1">
                     <a href="/SEU/public/account-balance" class="text-reset">My Account Balance</a>

@@ -110,8 +110,8 @@
     <!-- Sidebar -->
 
     <!-- Navbar -->
-     <!-- Navbar -->
-     <nav id="main-navbar" class="navbar navbar-expand-lg fixed-top navbar-custom mx-3">
+    <!-- Navbar -->
+    <nav id="main-navbar" class="navbar navbar-expand-lg fixed-top navbar-custom">
         <!-- Container wrapper -->
         <div class="container-fluid " >
         <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">

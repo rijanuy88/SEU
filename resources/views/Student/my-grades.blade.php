@@ -27,7 +27,7 @@
     <div class="card-header text-white" style="background-color: #e19021">
         MY GRADES
     </div>
-    <div div class="card-body">
+    <div div class="card-body" style="overflow-x:auto;">
         <img src="assets/icon.png" alt="" width="100" height="100" class="rounded-circle me-2">
         <span>  
             <ul>
@@ -62,11 +62,11 @@
        &nbsp
 </div>
 
-<div class="card w-75 mx-auto">
+<div class="card w-75 mx-auto" >
 <div class="card-header text-white" style="background-color: #e19021 ">
         BS Computer Science Curriculum Year 2019
     </div>
-    <div class="card-body">
+    <div class="card-body" style="overflow-x:auto;">
     <table class="table" style="test-align: center">
 
         <thead>

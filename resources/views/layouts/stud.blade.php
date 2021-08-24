@@ -13,6 +13,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script src="../../js/stud.js"></script>
+
+    <!-- Datatables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css">
+
+    <!-- Datatables -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
 </head>
 <style>
     .navbar-custom{
@@ -70,7 +78,15 @@
         background-image: url(
         "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
+
+    .btn-custom{
+        background-color: #e19021;
+        color:white;
+      }
 </style>
+
+<title>SEU Portal | @yield('title')</title>
+
 <!--Main Navigation-->
 <header>
     <!-- Sidebar -->
@@ -130,5 +146,9 @@
     <div class="container pt-4">
         @yield('content')
     </div>
+
+    @yield('modals')
+    @yield('scripts')
     </main>
+    
 <!--Main layout-->

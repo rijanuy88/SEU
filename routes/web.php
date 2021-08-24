@@ -66,3 +66,15 @@ Route::get('/my-grades', function () {
 Route::get('/my-class-offerings', function () {
     return view('Student.my-class-offerings');
 });
+
+Route::get('/admin/reg/pre-enlistment', function () {
+    return view('Registrar.pre-enlistment');
+});
+
+Route::get('/admin/reg/class-offerings', function () {
+    return view('Registrar.classofferings');
+});
+
+Route::get('/admin/reg/faculty-assignment', function () {
+    return view('Registrar.facultyassignment');
+});

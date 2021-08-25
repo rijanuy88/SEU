@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -81,7 +82,8 @@
         <div class="position-sticky">
             <div class="list-group list-group-flush mx-3 mt-4">
                 <a href="/SEU/public/dashboard">
-                    <img src="assets/SEU_Mini Logo.png" alt="" width="200" height="55">
+                    {{-- <img src="assets/SEU_Mini Logo.png" alt="" width="200" height="55"> --}}
+                    <img src="{{ asset('/assets/SEU_Mini Logo.png') }}" alt="" width="200" height="55">
                 </a>
                 <hr>
                 <ul id="collapseExample1" class="collapse show list-group list-group-flush">

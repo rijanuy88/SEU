@@ -1,7 +1,7 @@
 {{-- @extends('layouts.Studtabs') --}}
 @extends('layouts.stud')
 
-@section('title', 'stud-balance')
+@section('title', 'Account Balance')
 
 <style>
     .card-body{
@@ -20,7 +20,7 @@
 @section('content')
 <div class="card w-75 mx-auto">
     <div class="card-header text-white" style="background-color: #e19021">
-        MY ACCOUNT BALANCE
+        Academic Information
     </div>
     <div div class="card-body" style="overflow-x:auto;">
         <img src="assets/icon.png" alt="" width="100" height="100" class="rounded-circle me-2">
@@ -75,7 +75,7 @@
 {{-- BALANCE --}}
 <div class="card w-75 mx-auto">
     <div class="card-header text-white" style="background-color: #e19021">
-        PAYMENTS & DUE
+        Payments & Due
     </div>
     <div div class="card-body" style="overflow-x:auto;">
         <div class="col-6">
@@ -142,7 +142,7 @@
 </div>
 
 <div class="card w-75 mx-auto">
-    <div class="card-header text-white" style="background-color: #e19021 ">BREAKDOWN </div>
+    <div class="card-header text-white" style="background-color: #e19021 ">Breakdown of Fees </div>
     <div class="card-body">
 
         <table class="table table-borderless " style="test-align: center">

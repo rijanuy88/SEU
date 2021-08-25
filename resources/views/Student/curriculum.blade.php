@@ -2,7 +2,7 @@
 {{-- @extends('layouts.Studtabs') --}}
 @extends('layouts.stud')
 
-@section('title', 'stud-dashboard')
+@section('title', 'Curriculum')
 
 <style>
     .card-body{
@@ -25,7 +25,7 @@
 @section('content')
 <div class="card w-75 mx-auto">
     <div class="card-header text-white" style="background-color: #e19021">
-        ACADEMIC INFORMATION
+        Academic Information
     </div>
     <div div class="card-body" style="overflow-x:auto;">
         <img src="assets/icon.png" alt="" width="100" height="100" class="rounded-circle me-2">
@@ -63,7 +63,7 @@
 
 <div class="card w-75 mx-auto">
     <div class="card-header text-white" style="background-color: #e19021">
-        CURRICULUM EXPLORER
+        Curriculum Explorer
     </div>
     <div div class="card-body" style="overflow-x:auto;">
     <div class="col-6">

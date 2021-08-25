@@ -2,7 +2,7 @@
 {{-- @extends('layouts.Studtabs') --}}
 @extends('layouts.stud')
 
-@section('title', 'stud-dashboard')
+@section('title', 'Class Offerings')
 
 <style>
 </style>
@@ -12,7 +12,7 @@
 
 <div class="card w-75 mx-auto">
     <div class="card-header text-white" style="background-color: #e19021">
-        SEARCH CLASS OFFERINGS
+        Search Class Offerings
     </div>
     <div div class="card-body">
     <form>

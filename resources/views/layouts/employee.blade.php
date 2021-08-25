@@ -15,7 +15,7 @@
     <!-- Bootstrap Icons CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <script src="../../js/stud.js"></script>
+    {{-- <script src="../../js/stud.js"></script> --}}
 </head>
 <style>
     .navbar-custom{
@@ -89,22 +89,22 @@
                         <a href="" class="text-reset">Home</a>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/dashboard" class="text-reset">Pre-Enlistment</a>
+                        <a href="/SEU/public/admin/reg/pre-enlistment" class="text-reset">Pre-Enlistment</a>
                     </li>
                     <li class="list-group-item py-1">
                         <a href="/SEU/public/my-grades" class="text-reset">Registration</a>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/account-balance" class="text-reset">Curriculum</a>
+                        <a href="/SEU/public/admin/faculty/curriculum" class="text-reset">Curriculum</a>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/curriculum" class="text-reset">Class Offerings</a>
+                        <a href="/SEU/public/admin/reg/class-offerings" class="text-reset">Class Offerings</a>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/my-class-offerings" class="text-reset">Batch List</a>
+                        <a href="/SEU/public/admin/faculty/batch" class="text-reset">Batch List</a>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/my-class-offerings" class="text-reset">Class List</a>
+                        <a href="/SEU/public/admin/faculty/class" class="text-reset">Class List</a>
                     </li>
                     <li class="list-group-item py-1">
                         <a href="/SEU/public/my-class-offerings" class="text-reset">Tuition & Misc. Fees</a>

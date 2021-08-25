@@ -75,8 +75,8 @@ Route::get('/admin/reg/class-offerings', function () {
     return view('Registrar.classofferings');
 });
 
-Route::get('/admin/reg/faculty-assignment', function () {
-    return view('Registrar.facultyassignment');
+Route::get('/admin/reg/faculty-list', function () {
+    return view('Registrar.facultylist');
 });
 
 //faculty

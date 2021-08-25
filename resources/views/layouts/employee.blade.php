@@ -78,7 +78,7 @@
     .btn-custom{
         background-color: #e19021;
         color:white;
-      }
+    }
 </style>
 <!--Main Navigation-->
 <header>
@@ -108,7 +108,7 @@
                         <a href="/SEU/public/admin/reg/class-offerings" class="text-reset">Class Offerings</a>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/admin/reg/faculty-assignment" class="text-reset">Faculty</a>
+                        <a href="/SEU/public/admin/reg/faculty-list" class="text-reset">Faculty List</a>
                     </li>
                     <li class="list-group-item py-1">
                         <a href="/SEU/public/admin/faculty/batch" class="text-reset">Batch List</a>

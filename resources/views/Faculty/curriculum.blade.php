@@ -49,8 +49,8 @@
       </div>
     </div>
     
-    <div div class="card-body" style="overflow-x:auto;">
-      <table class="table " style="test-align: center" style="overflow-x:auto;">
+    <div div class="card-body" style="overflow-x:auto">
+      <table class="table" style="vertical-align:middle" style="overflow-x:auto;">
         <tbody style="overflow-x:auto;">
           <thead>
               <tr>

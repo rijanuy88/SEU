@@ -4,11 +4,11 @@
 
 @section('content')
 	<div class="container">
-		<div class="card" style="margin-top: 25px">
+		<div class="card">
 			<div class="card-header text-white" style="background-color: #e19021">
 				Student List
 			</div>
-			<div class="card-body">
+			<div class="card-body" style="overflow-x:auto">
 				<table class="table table-responsive table-sm" id="students_table">
 					<thead>
 						<tr>

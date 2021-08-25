@@ -15,8 +15,8 @@
 			<div class="card-header text-white" style="background-color: #e19021">
 				Pre-Enlistment
 			</div>
-			<div class="card-body">
-				<table class="table table-responsive table-sm" id="students_table">
+			<div class="card-body" style="overflow-x:auto">
+				<table class="table table-responsive table-sm" style="vertical-align:middle" id="students_table">
 					<thead>
 						<tr>
 							<th scope="col">Last Name</th>

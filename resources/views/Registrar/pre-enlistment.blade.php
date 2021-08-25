@@ -1,4 +1,4 @@
-@extends('layouts.stud')
+@extends('layouts.employee')
 
 @section('title', 'Pre-Enlistment')
 

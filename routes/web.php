@@ -66,7 +66,7 @@ Route::get('/my-grades', function () {
 Route::get('/my-class-offerings', function () {
     return view('Student.my-class-offerings');
 });
-
+//reg
 Route::get('/admin/reg/pre-enlistment', function () {
     return view('Registrar.pre-enlistment');
 });
@@ -77,4 +77,18 @@ Route::get('/admin/reg/class-offerings', function () {
 
 Route::get('/admin/reg/faculty-assignment', function () {
     return view('Registrar.facultyassignment');
+});
+
+//faculty
+Route::get('/admin/faculty/curriculum', function () {
+    return view('Faculty.curriculum');
+});
+Route::get('/admin/faculty/batch', function () {
+    return view('Faculty.batchList');
+});
+Route::get('/admin/faculty/class', function () {
+    return view('Faculty.classlist');
+});
+Route::get('/admin/faculty/class-offerings', function () {
+    return view('Faculty.classofferings');
 });

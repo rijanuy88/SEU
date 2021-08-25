@@ -2,14 +2,9 @@
 
 @section('title', 'Class Offerings')
 
-<style>
-    .row{
-        padding:1%;
-    }
-</style>
 @section('content')
 	<div class="container">
-		<div class="card" style="margin-top: 25px">
+		<div class="card">
 			<div class="card-header text-white" style="background-color: #e19021">
 				Class Offerings
 			</div>
@@ -29,7 +24,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
+						<tr style="vertical-align:middle">
                             <td>4-301</td>
                             <td>CS 1130</td>
                             <td>Introduction to Computing</td>
@@ -57,7 +52,7 @@
 @section('modals')
 	<!--Add Modal -->
 	<div class="modal fade" id="addcoursesModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
+		<div class="modal-dialog ">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="courseModalLabel">Add Course</h5>
@@ -66,39 +61,28 @@
 				<div class="modal-body">
 					<form method="POST">
 						@csrf
-						<div class="row">
-                            <div class="col-2"><label>Course Code</label></div>
-                            <div class="col-4"><input type="text" class="form-control" name="code" required></div>
-                            <div class="col-2"><label>Subject Name</label></div>
-                            <div class="col-4"><input type="text" class="form-control" name="subj" required></div>
+						<div class="mb-3">
+                            <div><label>Course Code</label></div>
+                            <div><input type="text" class="form-control" name="code" required></div>
 						</div>
-                        <div class="row">
-                            <div class="col-2"><label>Description</label></div>
-                            <div class="col-10"><input type="text" class="form-control" name="desc" required></div>
+						<div class="mb-3">
+							<div><label>Subject Name</label></div>
+                            <div><input type="text" class="form-control" name="subj" required></div>
 						</div>
-                        <div class="row">
-                            <div class="col-2"><label>Department</label></div>
-                            <div class="col-4">
+                        <div class="mb-3">
+                            <div><label>Description</label></div>
+                            <div><input type="text" class="form-control" name="desc" required></div>
+						</div>
+                        <div class="mb-3">
+                            <div><label>Department</label></div>
+                            <div>
+								<form>
                                 <select id="dept" class="form-control" required>
                                     <option></option>
                                     <option>...</option>
                                 </select>
+								</form>
                             </div>
-                            <div class="col-2"><label>Teacher</label></div>
-                            <div class="col-4"><input type="text" class="form-control" name="teacher" required></div>
-						</div>
-                        <div class="row">
-                            <div class="col-2"><label>Schedule</label></div>
-                            <div class="col-4"><input type="text" class="form-control" name="sched" required></div>
-                            <div class="col-2"><label>Room</label></div>
-                            <div class="col-4"><input type="text" class="form-control" name="room" required></div>
-						</div>
-                        <div class="row">
-                            <div class="col-2"><label>Slots</label></div>
-                            <div class="col-4"><input type="number" class="form-control" name="slots" required></div>
-                            <div class="col-2"><label>Section/s</label></div>
-                            <div class="col-4"><input type="text" class="form-control" name="section"></div>
-						</div>
 						<div class="mb-3"></div>
 						<div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

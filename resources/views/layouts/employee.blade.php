@@ -24,7 +24,7 @@
     }
     #main-navbar{
         background-color: whitesmoke;
-        height: 10%;
+        height: 11%;
         width: 100%;
         z-index: 10;
         box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
@@ -74,6 +74,11 @@
         background-image: url(
         "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
+
+    .btn-custom{
+        background-color: #e19021;
+        color:white;
+      }
 </style>
 <!--Main Navigation-->
 <header>
@@ -101,6 +106,9 @@
                     </li>
                     <li class="list-group-item py-1">
                         <a href="/SEU/public/admin/reg/class-offerings" class="text-reset">Class Offerings</a>
+                    </li>
+                    <li class="list-group-item py-1">
+                        <a href="/SEU/public/admin/reg/faculty-assignment" class="text-reset">Faculty</a>
                     </li>
                     <li class="list-group-item py-1">
                         <a href="/SEU/public/admin/faculty/batch" class="text-reset">Batch List</a>

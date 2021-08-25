@@ -11,7 +11,7 @@
 
 @section('content')
 	<div class="container">
-		<div class="card" style="margin-top: 25px">
+		<div class="card">
 			<div class="card-header text-white" style="background-color: #e19021">
 				Pre-Enlistment
 			</div>

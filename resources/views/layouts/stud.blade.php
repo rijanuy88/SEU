@@ -28,7 +28,7 @@
     }
     #main-navbar{
         background-color: whitesmoke;
-        height: 10%;
+        height: 11%;
         width: 100%;
         z-index: 10;
         box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);

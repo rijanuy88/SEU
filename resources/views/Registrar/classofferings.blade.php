@@ -75,7 +75,12 @@
 						</div>
                         <div class="mb-3">
                             <div><label>Division</label></div>
-                            <div><input type="text" class="form-control" name="division" required></div>
+							<div>
+                                <select id="division" class="form-select" required>
+                                    <option></option>
+                                    <option>...</option>
+                                </select>
+                            </div>
 						</div>
 						<div class="mb-3">
                             <div><label>Teacher</label></div>
@@ -134,12 +139,10 @@
                         <div class="mb-3">
                             <div><label>Division</label></div>
                             <div>
-								<form>
-                                <select id="division" class="form-control" required>
+                                <select id="division" class="form-select" required>
                                     <option></option>
                                     <option>...</option>
                                 </select>
-								</form>
                             </div>
 						<div class="mb-3"></div>
 						<div class="modal-footer">

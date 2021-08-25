@@ -27,7 +27,7 @@
     <div class="card-header text-white" style="background-color: #e19021">
         Academic Information
     </div>
-    <div div class="card-body">
+    <div class="card-body" style="overflow-x:auto;">
         <img src="assets/icon.png" alt="" width="100" height="100" class="rounded-circle me-2">
         <span>  
             <ul>
@@ -59,7 +59,7 @@
 </div>
 
 
-    <div class = "col-12 w-75 mx-auto" style ="text-align: center" >
+    <div class = "col-12 w-75 mx-auto" style ="text-align: center">
         &nbsp
         <table class = "table" >
             <tr>
@@ -83,7 +83,7 @@
 
 <div class="card w-75 mx-auto">
     <div class="card-header text-white" style="background-color: #e19021 ">Report Card </div>
-    <div class="card-body">
+    <div class="card-body" style="overflow-x:auto;">
 
     <table class="table" style="text-align: center">
         <thead>

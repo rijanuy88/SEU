@@ -78,7 +78,7 @@
 						<div class="mb-3">
                             <div><label>Division</label></div>
                             <div>
-                                <select id="division" class="form-control" required>
+                                <select id="division" class="form-select" required>
                                     <option></option>
                                     <option>...</option>
                                 </select>
@@ -87,7 +87,7 @@
                         <div class="mb-3">
                             <div><label>Department</label></div>
                             <div>
-                                <select id="dept" class="form-control" required>
+                                <select id="dept" class="form-select" required>
                                     <option></option>
                                     <option>...</option>
                                 </select>
@@ -96,7 +96,7 @@
 						<div class="mb-3">
                             <div><label>Designation</label></div>
                             <div>
-                                <select id="designation" class="form-control" required>
+                                <select id="designation" class="form-select" required>
                                     <option></option>
                                     <option>...</option>
                                 </select>
@@ -142,7 +142,7 @@
 						<div class="mb-3">
                             <div><label>Division</label></div>
                             <div>
-                                <select id="division" class="form-control" required>
+                                <select id="division" class="form-select" required>
                                     <option></option>
                                     <option>...</option>
                                 </select>
@@ -151,7 +151,7 @@
                         <div class="mb-3">
                             <div><label>Department</label></div>
                             <div>
-                                <select id="dept" class="form-control" required>
+                                <select id="dept" class="form-select" required>
                                     <option></option>
                                     <option>...</option>
                                 </select>
@@ -160,7 +160,7 @@
 						<div class="mb-3">
                             <div><label>Designation</label></div>
                             <div>
-                                <select id="designation" class="form-control" required>
+                                <select id="designation" class="form-select" required>
                                     <option></option>
                                     <option>...</option>
                                 </select>

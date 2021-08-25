@@ -143,7 +143,7 @@
 
 <div class="card w-75 mx-auto">
     <div class="card-header text-white" style="background-color: #e19021 ">Breakdown of Fees </div>
-    <div class="card-body">
+    <div class="card-body" style="overflow-x:auto;">
 
         <table class="table table-borderless " style="test-align: center">
         <tbody>

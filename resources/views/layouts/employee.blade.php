@@ -80,6 +80,9 @@
         color:white;
     }
 </style>
+
+<title>SEU Admin Portal | @yield('title')</title>
+
 <!--Main Navigation-->
 <header>
     <!-- Sidebar -->

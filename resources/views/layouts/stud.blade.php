@@ -85,7 +85,7 @@
       }
 </style>
 
-<title>SEU Portal | @yield('title')</title>
+<title>SEU Student Portal | @yield('title')</title>
 
 <!--Main Navigation-->
 <header>

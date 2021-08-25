@@ -1,24 +1,24 @@
 @extends('layouts.employee')
 
-@section('title', 'Student List')
+@section('title', 'Class List')
 
 @section('content')
 	<div class="container">
 		<div class="card">
 			<div class="card-header text-white" style="background-color: #e19021">
-				Student List
+				Class List
 			</div>
 			<div class="card-body" style="overflow-x:auto">
 				<table class="table table-responsive table-sm" id="students_table">
 					<thead>
 						<tr>
-							<th scope="col">Student ID</th>
-							<th scope="col">Last Name</th>
-							<th scope="col">First Name</th>
-                            <th scope="col">Middle Name</th>
-                            <th scope="col">Suffix</th>
-                            <th scope="col">Year</th>
-							<th scope="col">Action</th>
+                            <th scope="col">STUDENT ID</th>
+							<th scope="col">LAST NAME</th>
+							<th scope="col">FIRST NAME</th>
+                            <th scope="col">MIDDLE NAME</th>
+                            <th scope="col">SUFFIX</th>
+                            <th scope="col">YEAR</th>
+							<th scope="col">ACTION</th>
 						</tr>
 					</thead>
 					<tbody>

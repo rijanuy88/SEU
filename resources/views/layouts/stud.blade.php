@@ -82,7 +82,11 @@
     .btn-custom{
         background-color: #e19021;
         color:white;
-      }
+    }
+
+    th{
+		color:gray;
+	}
 </style>
 
 <title>SEU Student Portal | @yield('title')</title>

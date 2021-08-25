@@ -79,6 +79,10 @@
         background-color: #e19021;
         color:white;
     }
+
+	th{
+		color:gray;
+	}
 </style>
 
 <title>SEU Admin Portal | @yield('title')</title>
@@ -105,13 +109,16 @@
                         <a href="/SEU/public/my-grades" class="text-reset">Registration</a>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/admin/faculty/curriculum" class="text-reset">Curriculum</a>
+                        <a href="/SEU/public/admin/reg/curriculum" class="text-reset">Curriculum</a>
                     </li>
                     <li class="list-group-item py-1">
                         <a href="/SEU/public/admin/reg/class-offerings" class="text-reset">Class Offerings</a>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/admin/reg/faculty-list" class="text-reset">Faculty List</a>
+                        <a href="/SEU/public/admin/reg/faculty" class="text-reset">Faculty List</a>
+                    </li>
+                    <li class="list-group-item py-1">
+                        <a href="/SEU/public/admin/reg/staff" class="text-reset">Non-Teaching Staff</a>
                     </li>
                     <li class="list-group-item py-1">
                         <a href="/SEU/public/admin/faculty/batch" class="text-reset">Batch List</a>

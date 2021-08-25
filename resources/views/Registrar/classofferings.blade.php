@@ -12,15 +12,15 @@
 				<table class="table table-responsive table-sm" style="vertical-align:middle" id="students_table">
 					<thead>
 						<tr>
-							<th scope="col">Course Code</th>
-                            <th scope="col">Subject Name</th>
-							<th scope="col">Description</th>
-							<th scope="col">Division</th>
-							<th scope="col">Schedule</th>
-							<th scope="col">Teacher</th>
-                            <th scope="col">Slots</th>
-							<th scope="col">Section/s</th>
-                            <th scope="col">Action</th>
+							<th scope="col">COURSE CODE</th>
+                            <th scope="col">SUBJECT CODE</th>
+							<th scope="col">SUBJECT NAME</th>
+							<th scope="col">DIVISION</th>
+							<th scope="col">SCHEDULE</th>
+							<th scope="col">TEACHER</th>
+                            <th scope="col">SLOTS</th>
+							<th scope="col">SECTION/S</th>
+                            <th scope="col">ACTION</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -63,15 +63,15 @@
 						@csrf
 						<div class="mb-3">
                             <div><label>Course Code</label></div>
-                            <div><input type="text" class="form-control" name="code" required></div>
+                            <div><input type="text" class="form-control" name="coursecode" required></div>
 						</div>
 						<div class="mb-3">
-							<div><label>Subject Name</label></div>
-                            <div><input type="text" class="form-control" name="subj" required></div>
+							<div><label>Subject Code</label></div>
+                            <div><input type="text" class="form-control" name="subjcode" required></div>
 						</div>
                         <div class="mb-3">
-                            <div><label>Description</label></div>
-                            <div><input type="text" class="form-control" name="desc" required></div>
+                            <div><label>Subject Name</label></div>
+                            <div><input type="text" class="form-control" name="subjcode" required></div>
 						</div>
                         <div class="mb-3">
                             <div><label>Division</label></div>
@@ -121,15 +121,15 @@
 						@csrf
 						<div class="mb-3">
                             <div><label>Course Code</label></div>
-                            <div><input type="text" class="form-control" name="code" required></div>
+                            <div><input type="text" class="form-control" name="coursecode" required></div>
 						</div>
 						<div class="mb-3">
-							<div><label>Subject Name</label></div>
-                            <div><input type="text" class="form-control" name="subj" required></div>
+							<div><label>Subject Code</label></div>
+                            <div><input type="text" class="form-control" name="subjcode" required></div>
 						</div>
                         <div class="mb-3">
-                            <div><label>Description</label></div>
-                            <div><input type="text" class="form-control" name="desc" required></div>
+                            <div><label>Subject Name</label></div>
+                            <div><input type="text" class="form-control" name="subjcode" required></div>
 						</div>
                         <div class="mb-3">
                             <div><label>Division</label></div>

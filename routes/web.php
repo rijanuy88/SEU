@@ -66,6 +66,7 @@ Route::get('/my-grades', function () {
 Route::get('/my-class-offerings', function () {
     return view('Student.my-class-offerings');
 });
+
 //reg
 Route::get('/admin/reg/pre-enlistment', function () {
     return view('Registrar.pre-enlistment');
@@ -75,14 +76,18 @@ Route::get('/admin/reg/class-offerings', function () {
     return view('Registrar.classofferings');
 });
 
-Route::get('/admin/reg/facult', function () {
+Route::get('/admin/reg/faculty', function () {
     return view('Registrar.facultylist');
 });
 
-//faculty
-Route::get('/admin/faculty/curriculum', function () {
-    return view('Faculty.curriculum');
+Route::get('/admin/reg/staff', function () {
+    return view('Registrar.staff');
 });
+Route::get('/admin/reg/curriculum', function () {
+    return view('Registrar.curriculum');
+});
+
+//faculty
 Route::get('/admin/faculty/batch', function () {
     return view('Faculty.batchList');
 });
@@ -91,4 +96,12 @@ Route::get('/admin/faculty/class', function () {
 });
 Route::get('/admin/faculty/class-offerings', function () {
     return view('Faculty.classofferings');
+});
+
+//finance
+Route::get('/admin/finance/curriculum', function () {
+    return view('Finance.curriculum');
+});
+Route::get('/admin/finance/tuition-misc', function () {
+    return view('Finance.tuition&misc');
 });

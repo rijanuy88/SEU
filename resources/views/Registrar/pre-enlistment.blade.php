@@ -19,16 +19,16 @@
 				<table class="table table-responsive table-sm" style="vertical-align:middle" id="students_table">
 					<thead>
 						<tr>
-							<th scope="col">Last Name</th>
-							<th scope="col">First Name</th>
-							<th scope="col">Middle Initial</th>
-							<th scope="col">Suffix</th>
-							<th scope="col">Schedule</th>
-							<th scope="col">Results</th>
-							<th scope="col">Status</th>
-							<th scope="col">Report Card</th>
-							<th scope="col">Birth Cert</th>
-							<th scope="col">Med Cert</th>	
+							<th scope="col">LAST NAME</th>
+                            <th scope="col">FIRST NAME</th>
+							<th scope="col">MIDDLE INITIAL</th>
+							<th scope="col">SUFFIX</th>
+                            <th scope="col">SCHEDULE</th>
+							<th scope="col">RESULTS</th>
+							<th scope="col">STATUS</th>
+                            <th scope="col">REPORT CARD</th>
+							<th scope="col">BIRTH CERT</th>
+							<th scope="col">MED CERT</th>	
 						</tr>
 					</thead>
 					<tbody>

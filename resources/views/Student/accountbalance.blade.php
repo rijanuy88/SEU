@@ -18,12 +18,14 @@
 </style>
 
 @section('content')
-<div class="card w-75 mx-auto">
+<div class="card mx-auto">
     <div class="card-header text-white" style="background-color: #e19021">
         Academic Information
     </div>
     <div div class="card-body" style="overflow-x:auto;">
+     <span></span>
         <img src="assets/icon.png" alt="" width="100" height="100" class="rounded-circle me-2">
+        <span></span>
         <span>  
             <ul>
                 <li style="color:gray">STUDENT NAME</li>
@@ -32,6 +34,7 @@
                 <li><h6>12345678</h6></li>
             </ul>
         </span>
+        <span></span>
         <span>
             <ul>
                 <li style="color:gray">COURSE</li>
@@ -40,6 +43,7 @@
                 <li><h6>ComSci 3-A</h6></li>
             </ul>
         </span>
+        <span></span>
         <span>
             <ul>
                 <li style="color:gray">ACADEMIC PERIOD</li>
@@ -73,7 +77,7 @@
 
 {{-- contents --}}
 {{-- BALANCE --}}
-<div class="card w-75 mx-auto">
+<div class="card mx-auto">
     <div class="card-header text-white" style="background-color: #e19021">
         Payments & Due
     </div>
@@ -141,7 +145,7 @@
        &nbsp
 </div>
 
-<div class="card w-75 mx-auto">
+<div class="card  mx-auto">
     <div class="card-header text-white" style="background-color: #e19021 ">Breakdown of Fees </div>
     <div class="card-body" style="overflow-x:auto;">
 

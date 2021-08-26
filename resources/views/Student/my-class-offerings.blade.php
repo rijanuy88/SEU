@@ -10,7 +10,7 @@
 @section('content')
 
 
-<div class="card w-75 mx-auto">
+<div class="card  mx-auto">
     <div class="card-header text-white" style="background-color: #e19021">
         Search Class Offerings
     </div>

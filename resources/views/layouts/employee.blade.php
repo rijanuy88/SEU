@@ -100,7 +100,7 @@
                 <hr>
                 <ul id="collapseExample1" class="collapse show list-group list-group-flush">
                     <li class="list-group-item py-1">
-                        <a href="" class="text-reset">Home</a>
+                        <a href="/SEU/public/admin/employee/home" class="text-reset">Home</a>
                     </li>
                     <li class="list-group-item py-1">
                         <a href="/SEU/public/admin/reg/pre-enlistment" class="text-reset">Pre-Enlistment</a>
@@ -127,8 +127,15 @@
                         <a href="/SEU/public/admin/faculty/class" class="text-reset">Class List</a>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/my-class-offerings" class="text-reset">Tuition & Misc. Fees</a>
+                        <a href="/SEU/public/admin/finance/batchfinance" class="text-reset">Batch Finances</a>
                     </li>
+                    <li class="list-group-item py-1">
+                        <a href="/SEU/public/admin/finance/tuition-misc " class="text-reset"> Student Tuition & Miscellaneous</a>
+                    </li>
+                    <li class="list-group-item py-1">
+                        <a href="/SEU/public/admin/finance/curriculum" class="text-reset">Curriculum Prices</a>
+                    </li>
+
                     <li class="list-group-item py-1">
                         <a href="/SEU/public/" class="text-reset">Log out</a>
                     </li>

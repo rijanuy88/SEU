@@ -30,6 +30,16 @@ Route::get('/pre-enlistment', function () {
     return view('Enrollment.pre-enlistment');
 });
 
+Route::get('/undergrad-forms', function () {
+    return view('Enrollment.undergrad-forms');
+});
+Route::get('/gradschool-forms', function () {
+    return view('Enrollment.gradschool-forms');
+});
+Route::get('/postgrad-forms', function () {
+    return view('Enrollment.postgrad-forms');
+});
+
 Route::get('/documents', function () {
     return view('Enrollment.documents');
 });
@@ -44,6 +54,9 @@ Route::get('/status', function () {
 // employees
 Route::get('/apply', function () {
     return view('Employee.contactus');
+});
+Route::get('/admin/employee/home', function () {
+    return view('Employee.home');
 });
 
 // students
@@ -99,9 +112,16 @@ Route::get('/admin/faculty/class-offerings', function () {
 });
 
 //finance
+
+Route::get('/admin/finance/tuition-misc', function () {
+    return view('Finance.tuition&misc');
+});
+Route::get('/admin/finance/tuition-misc-student', function () {
+    return view('Finance.tuition&misc-student');
+});
 Route::get('/admin/finance/curriculum', function () {
     return view('Finance.curriculum');
 });
-Route::get('/admin/finance/tuition-misc', function () {
-    return view('Finance.tuition&misc');
+Route::get('/admin/finance/batchfinance', function () {
+    return view('Finance.batchfinance');
 });

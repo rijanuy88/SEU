@@ -35,11 +35,13 @@
                     <td>December 21, 2012</td>
                     <td>Passed</button>
                     <td><a href="/SEU/public/documents"><button type="button" class="btn btn-custom">Submit Documents</button></a></td>
+                    
                 </tr>
             </tbody>
              
         </table>
         <!-- Status -->
-
+        {{-- hide if not yet checked by reg --}}
+                <td><a href="/SEU/public/"><button type="button" class="btn btn-custom">Download Admission Slip</button></a></td>
     </div>
 @endsection

@@ -87,15 +87,15 @@
 						</div>
                         <div class="mb-3">
                             <div><label>Room</label></div>
-                            <div><input type="text" class="form-control" name="room" readonly></div>
+                            <div><input type="text" class="form-control" name="room" required></div>
 						</div>
                         <div class="mb-3">
                             <div><label>Slots</label></div>
-                            <div><input type="text" class="form-control" name="slots" readonly></div>
+                            <div><input type="number" class="form-control" name="slots" readonly></div>
 						</div>
 						<div class="mb-3">
                             <div><label>Section/s</label></div>
-                            <div><input type="text" class="form-control" name="section"></div>
+                            <div><input type="text" class="form-control" name="section" readonly></div>
 						</div>
 						<div class="mb-3"></div>
 						<div class="modal-footer">

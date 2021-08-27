@@ -29,6 +29,7 @@
                             <th scope="col">REPORT CARD</th>
 							<th scope="col">BIRTH CERT</th>
 							<th scope="col">MED CERT</th>	
+							<th scope="col">ACTION</th>	
 						</tr>
 					</thead>
 					<tbody>
@@ -38,24 +39,14 @@
 							<td>G</td>
 							<td>III</td>
 							<td>05/13/21</td>
-							<td class="dropdown">
-								<select>
-									<option value=""></option>
-									<option value="Accepted">Accepted</option>
-									<option value="Rejected">Rejected</option>
-									<option value="Waiting">Waiting</option>
-								</select>
-							</td>	
-							<td class="dropdown">
-								<select>
-									<option value=""></option>
-									<option value="Waiting for Confirmation">Waiting for Confirmation</option>
-									<option value="Enrollment Verified">Enrollment Verified</option>
-								</select>
+							<td>Passed</td>	
+							<td>Waiting</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td><button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editcurriculumModal"><i class="bi bi-pencil-square"></i></button>
+								<button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
 							</td>
-							<td class='checkbox'><input type="checkbox" name="reportcard"></td>
-							<td class='checkbox'><input type="checkbox" name="birthcert"></td>
-							<td class='checkbox'><input type="checkbox" name="medcert"></td>
 						</tr>
 					</tbody>
 				</table>

@@ -104,9 +104,9 @@ Route::get('/admin/reg/curriculum', function () {
 Route::get('/admin/faculty/batch', function () {
     return view('Faculty.batchList');
 });
-Route::get('/admin/faculty/class', function () {
-    return view('Faculty.classlist');
-});
+// Route::get('/admin/faculty/class', function () {
+//     return view('Faculty.classlist');
+// });
 Route::get('/admin/faculty/class-offerings', function () {
     return view('Faculty.classofferings');
 });
@@ -118,10 +118,4 @@ Route::get('/admin/finance/tuition-misc', function () {
 });
 Route::get('/admin/finance/tuition-misc-student', function () {
     return view('Finance.tuition&misc-student');
-});
-Route::get('/admin/finance/curriculum', function () {
-    return view('Finance.curriculum');
-});
-Route::get('/admin/finance/batchfinance', function () {
-    return view('Finance.batchfinance');
 });

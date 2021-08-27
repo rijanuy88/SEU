@@ -45,6 +45,17 @@
 @endsection
 
 @section('modals')
+	<!--Confirm Modal -->
+	<div class="modal fade" tabindex="-1" aria-hidden="true" id="success">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					Successfully sent!
+				</div>
+			</div>
+    	</div>
+    </div>
+
   <!--Edit Modal -->
   <div class="modal fade" id="editcurriculumModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
@@ -120,13 +131,17 @@
 						</div>
 						<div class="mb-3">
               <div><label>Pre-Requisite</label></div>
-              <div><input type="text" class="form-control" name="prerequisite"></div>
+              <div><input type="text" class="form-control" name="pre" required></div>
 						</div>
 						<div class="mb-3">
 							<div><label>Credits</label></div>
               <div><input type="text" class="form-control" name="credits" required></div>
 						</div>
 						<div class="mb-3"></div>
+						<div class="form-group form-check">
+							<input type="checkbox" class="form-check-input" id="checklab">
+							<label class="form-check-label" for="checklab">Laboratory</label>
+						</div>
 						<div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               <button type="button" class="btn btn-custom" id="add">Save</button>
@@ -174,4 +189,52 @@ window.onload = function() {
     }
   }
 }
+</script>
+
+<script>
+//     $(".js-example-tokenizer").select2({
+//         tags: true,
+//         tokenSeparators: [',', ' ']
+//     }) 
+
+// 	$('select').select2({
+// 		createTag: function (params) {
+// 			var term = $.trim(params.term);
+
+// 			if (term === '') {
+// 			return null;
+// 			}
+
+// 			return {
+// 			id: term,
+// 			text: term,
+// 			newTag: true // add additional parameters
+// 			}
+// 		}
+// 		});
+
+// 		$('select').select2({
+//   createTag: function (params) {
+//     // Don't offset to create a tag if there is no @ symbol
+//     if (params.term.indexOf('@') === -1) {
+//       // Return null to disable tag creation
+//       return null;
+//     }
+
+//     return {
+//       id: params.term,
+//       text: params.term
+//     }
+//   }
+// });
+
+// $('select').select2({
+//   insertTag: function (data, tag) {
+//     // Insert the tag at the end of the results
+//     data.push(tag);
+//   }
+// });
+
+
+
 </script>

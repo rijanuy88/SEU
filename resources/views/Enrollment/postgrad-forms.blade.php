@@ -143,13 +143,14 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Form Submission Notification</h5>
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         
         </button>
       </div>
-      <div class="modal-body">
-        You response has been recorded!
+      <div class="jumbotron mx-auto d-block col-sm-12" style="margin:3%; text-align: center">
+    <h1 class="display-4">Your response has been recorded!</h1>
+    <p class="lead">Kindly review your enrollment status in the Enrollment Status tab after five (5) working days.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Close</button>

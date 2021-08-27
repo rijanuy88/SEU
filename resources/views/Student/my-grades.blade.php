@@ -61,7 +61,7 @@
 </div>
 
 
-    <div class = "col-12 w-75 mx-auto" style ="text-align: center">
+    <div class = "col-12 mx-auto" style ="text-align: center">
         &nbsp
         <table class = "table" >
             <tr>
@@ -83,7 +83,7 @@
     </div>
 
 
-<div class="card w-75 mx-auto">
+<div class="card mx-auto">
     <div class="card-header text-white" style="background-color: #e19021 ">Report Card </div>
     <div class="card-body" style="overflow-x:auto;">
 

@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,6 +15,9 @@
     <!-- Bootstrap Icons CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
+    {{--tagging --}}
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     {{-- <script src="../../js/stud.js"></script> --}}
 </head>
 <style>
@@ -49,9 +51,24 @@
         width: 240px;
         z-index: 600;
     }
-    a{
-        text-decoration:none;
+    .sidebar-nav li button:hover {
+        border-radius: 5px;
+        text-decoration: none;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2);
     }
+    
+    .sidebar-nav li button:active,
+    .sidebar-nav li button:focus {
+        text-decoration: none;
+        color: #fff;
+        background: #5c0d0d
+    }
+    .list-group-item>button{
+        text-decoration:none;
+        color: white;
+    }
+   
     @media (max-width: 991.98px) {
         .sidebar {
             width: 100%;
@@ -60,6 +77,8 @@
     .sidebar .active {
         border-radius: 5px;
         box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+        color: #fff;
+        background: #5c0d0d
     }
     .sidebar-sticky {
         position: relative;
@@ -90,54 +109,44 @@
 <!--Main Navigation-->
 <header>
     <!-- Sidebar -->
-    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse navbar-custom">
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse navbar-custom sidebar-nav">
         <div class="position-sticky">
-            <div class="list-group list-group-flush mx-3 mt-4">
+            <div class="list-group list-group-flush mx-3 mt-4 ">
                 <a href="/SEU/public/dashboard">
                     {{-- <img src="assets/SEU_Mini Logo.png" alt="" width="200" height="55"> --}}
                     <img src="{{ asset('/assets/SEU_Mini Logo.png') }}" alt="" width="200" height="55">
                 </a>
                 <hr>
-                <ul id="collapseExample1" class="collapse show list-group list-group-flush">
+                <ul id="collapseExample1" class=" nav flex-column nav-pills collapse show list-group list-group-flush">
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/admin/employee/home" class="text-reset">Home</a>
+                        <button onclick="document.location='/SEU/public/admin/employee/home'"class="nav-link active" data-bs-toggle="pill">Home</button>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/admin/reg/pre-enlistment" class="text-reset">Pre-Enlistment</a>
+                        <button onclick="document.location='/SEU/public/admin/reg/pre-enlistment'" class="nav-link" data-bs-toggle="pill">Pre-Enlistment</button>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/my-grades" class="text-reset">Registration</a>
+                        <button onclick="document.location='/SEU/public/admin/reg/curriculum'"class="nav-link" data-bs-toggle="pill">Curriculum</button>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/admin/reg/curriculum" class="text-reset">Curriculum</a>
+                    <button onclick="document.location='/SEU/public/admin/reg/class-offerings'"class="nav-link" data-bs-toggle="pill">Class Offerings</button>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/admin/reg/class-offerings" class="text-reset">Class Offerings</a>
+                        <button onclick="document.location='/SEU/public/admin/reg/faculty'"class="nav-link" data-bs-toggle="pill">Faculty List</button>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/admin/reg/faculty" class="text-reset">Faculty List</a>
+                        <button onclick="document.location='/SEU/public/admin/reg/staff'"class="nav-link" data-bs-toggle="pill">Non-Teaching Staff</button>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/admin/reg/staff" class="text-reset">Non-Teaching Staff</a>
+                        <button onclick="document.location='/SEU/public/admin/faculty/batch'"class="nav-link" data-bs-toggle="pill">Batch List</button>
                     </li>
-                    <li class="list-group-item py-1">
-                        <a href="/SEU/public/admin/faculty/batch" class="text-reset">Batch List</a>
-                    </li>
-                    <li class="list-group-item py-1">
+                    {{-- <li class="list-group-item py-1">
                         <a href="/SEU/public/admin/faculty/class" class="text-reset">Class List</a>
+                    </li> --}}
+                    <li class="list-group-item py-1">
+                        <button onclick="document.location='/SEU/public/admin/finance/tuition-misc'" class="nav-link"   data-bs-toggle="pill">Tuition & Misc. Fees</button>
                     </li>
                     <li class="list-group-item py-1">
-                        <a href="/SEU/public/admin/finance/batchfinance" class="text-reset">Batch Finances</a>
-                    </li>
-                    <li class="list-group-item py-1">
-                        <a href="/SEU/public/admin/finance/tuition-misc " class="text-reset"> Student Tuition & Miscellaneous</a>
-                    </li>
-                    <li class="list-group-item py-1">
-                        <a href="/SEU/public/admin/finance/curriculum" class="text-reset">Curriculum Prices</a>
-                    </li>
-
-                    <li class="list-group-item py-1">
-                        <a href="/SEU/public/" class="text-reset">Log out</a>
+                        <button onclick="document.location='/SEU/public/'" class="nav-link" data-bs-toggle="pill" >Log out</button>
                     </li>
                 </ul>
             </div>
@@ -166,6 +175,23 @@
     <div class="container pt-4">
         @yield('content')
         @yield('modals')
+        @yield('scripts')
     </div>
     </main>
 <!--Main layout-->
+
+
+<script type="text/javascript">
+    $(function(){
+        // $('.sidebar1 a').filter(function(){return this.href==location.href}).parent().addClass('active').siblings().removeClass('active'); i have not tried this line
+        $('.list-group a').click(function(){
+            $(".list-group-item").removeClass('active');
+            $(this).addClass('active');          
+        })
+    })
+
+    $(document).ready(function(){
+   $(".text-reset").removeClass("active");
+   $(".list-group-item").addClass("active");
+});
+</script>

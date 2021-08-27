@@ -69,7 +69,7 @@
             </div>
             <div class="col-md-6">
             <label for="exampleFormControlInput1" class="form-label">Age</label>
-                <input type="text" class="form-control" name="studAge">
+                <input type="text" class="form-control" name="studAge" readonly>
             </div>
             <div class="col-md-6">
             <label for="exampleFormControlInput1" class="form-label">Email</label>
@@ -128,8 +128,9 @@
         
         </button>
       </div>
-      <div class="modal-body">
-        You response has been recorded!
+      <div class="jumbotron mx-auto d-block col-sm-12" style="margin:3%; text-align: center">
+        <h1 class="display-4">Your response has been recorded!</h1>
+        <p class="lead">Kindly review your enrollment status in the Enrollment Status tab after five (5) working days.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Close</button>

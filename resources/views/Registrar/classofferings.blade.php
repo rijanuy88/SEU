@@ -92,15 +92,15 @@
 						</div>
                         <div class="mb-3">
                             <div><label>Room</label></div>
-                            <div><input type="text" class="form-control" name="room" required></div>
+                            <div><input type="text" class="form-control" name="room" readonly></div>
 						</div>
                         <div class="mb-3">
                             <div><label>Slots</label></div>
-                            <div><input type="text" class="form-control" name="slots" required></div>
+                            <div><input type="number" class="form-control" name="slots" required></div>
 						</div>
 						<div class="mb-3">
                             <div><label>Section/s</label></div>
-                            <div><input type="text" class="form-control" name="section" readonly></div>
+                            <div><input type="text" class="form-control" name="section" required></div>
 						</div>
 						<div class="mb-3"></div>
 						<div class="modal-footer">
@@ -144,6 +144,15 @@
                                     <option>...</option>
                                 </select>
                             </div>
+						</div>
+						<div class="mb-3">
+                            <div><label>Slots</label></div>
+                            <div><input type="number" class="form-control" name="slots" required></div>
+						</div>
+						<div class="mb-3">
+                            <div><label>Section/s</label></div>
+                            <div><input type="text" class="form-control" name="section" required></div>
+						</div>
 						<div class="mb-3"></div>
 						<div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

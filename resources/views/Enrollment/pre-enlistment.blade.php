@@ -23,3 +23,14 @@
     </div>
  
 @endsection
+
+@section('scripts')
+    <script type="application/javascript">
+        $(document).ready(function(){
+            $('ul li button').click(function(){
+                $('li button').removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+@endsection

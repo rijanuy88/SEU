@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{-- favicon --}}
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sidebars/">
-        
+    
 
 <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -19,6 +21,23 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     {{-- <script src="../../js/stud.js"></script> --}}
+    
+    {{-- <script type="application/javascript">
+        $(document).ready(function(){
+            $('ul li button').click(function(){
+                $('li button').removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script> --}}
+
+    <script>
+        $( '#sidebarMenu .nav-link button' ).on( 'click', function () {
+            $( '#sidebarMenu .nav-link' ).find( 'li.active' ).removeClass( 'active' );
+            $( this ).parent( 'li' ).addClass( 'active' );
+        });
+    </script>
+
 </head>
 <style>
     .navbar-custom{
@@ -51,6 +70,7 @@
         width: 240px;
         z-index: 600;
     }
+    
     .sidebar-nav li button:hover {
         border-radius: 5px;
         text-decoration: none;
@@ -68,13 +88,31 @@
         text-decoration:none;
         color: white;
     }
-   
+
+    #sidebarMenu .li:active,
+    #sidebarMenu li:focus {
+        text-decoration: none;
+        color: #fff;
+        background: #5c0d0d
+    }
+
+    /* .sidebar-nav li a:active,
+    .sidebar-nav li a:focus {
+        text-decoration: none;
+        color: #fff;
+        background: #5c0d0d
+    }
+    .list-group-item>a{
+        text-decoration:none;
+        color: white;
+    }
+    */
     @media (max-width: 991.98px) {
         .sidebar {
             width: 100%;
         }
     }
-    .sidebar .active {
+    #sidebarMenu li:active {
         border-radius: 5px;
         box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
         color: #fff;
@@ -102,7 +140,12 @@
 	th{
 		color:gray;
 	}
+
+    .form-check-input::after{
+        color:  #e19021;
+    }
 </style>
+
 
 <title>SEU Admin Portal | @yield('title')</title>
 
@@ -118,8 +161,8 @@
                 </a>
                 <hr>
                 <ul id="collapseExample1" class=" nav flex-column nav-pills collapse show list-group list-group-flush">
-                    <li class="list-group-item py-1">
-                        <button onclick="document.location='/SEU/public/admin/employee/home'"class="nav-link active" data-bs-toggle="pill">Home</button>
+                    <li onclick="document.location='/SEU/public/admin/employee/home'" class="list-group-item py-1 active">
+                        <button class="nav-link" >Home</button>
                     </li>
                     <li class="list-group-item py-1">
                         <button onclick="document.location='/SEU/public/admin/reg/pre-enlistment'" class="nav-link" data-bs-toggle="pill">Pre-Enlistment</button>
@@ -143,7 +186,7 @@
                         <a href="/SEU/public/admin/faculty/class" class="text-reset">Class List</a>
                     </li> --}}
                     <li class="list-group-item py-1">
-                        <button onclick="document.location='/SEU/public/admin/finance/tuition-misc'" class="nav-link"   data-bs-toggle="pill">Tuition & Misc. Fees</button>
+                        <button onclick="document.location='/SEU/public/admin/finance/tuition-misc'" class="nav-link" data-bs-toggle="pill">Tuition & Misc. Fees</button>
                     </li>
                     <li class="list-group-item py-1">
                         <button onclick="document.location='/SEU/public/'" class="nav-link" data-bs-toggle="pill" >Log out</button>
@@ -152,7 +195,7 @@
             </div>
         </div>
     </nav>
-    <!-- Sidebar -->
+    <!-- Sidebar --> 
 
     <!-- Navbar -->
     <!-- Navbar -->

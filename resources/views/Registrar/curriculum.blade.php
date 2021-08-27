@@ -114,8 +114,8 @@
 					<form method="POST">
 						@csrf
 						<div class="mb-3">
-              <div><label>Year Level</label></div>
-              <div><input type="text" class="form-control" name="yearlvl" required></div>
+              				<div><label>Year Level</label></div>
+              				<div><input type="text" class="form-control" name="yearlvl" required></div>
 						</div>
 						<div class="mb-3">
 							<div><label>Semester</label></div>
@@ -138,9 +138,9 @@
               <div><input type="text" class="form-control" name="credits" required></div>
 						</div>
 						<div class="mb-3"></div>
-						<div class="form-group form-check">
-							<input type="checkbox" class="form-check-input" id="checklab">
-							<label class="form-check-label" for="checklab">Laboratory</label>
+						<div class="form-check form-switch" >
+							<input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+							<label class="form-check-label" for="flexSwitchCheckDefault">Laboratory</label>
 						</div>
 						<div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

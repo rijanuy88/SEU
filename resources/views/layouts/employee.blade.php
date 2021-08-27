@@ -161,8 +161,8 @@
                 </a>
                 <hr>
                 <ul id="collapseExample1" class=" nav flex-column nav-pills collapse show list-group list-group-flush">
-                    <li onclick="document.location='/SEU/public/admin/employee/home'" class="list-group-item py-1 active">
-                        <button class="nav-link" >Home</button>
+                    <li class="list-group-item py-1">
+                        <button onclick="document.location='/SEU/public/admin/employee/home'"class="nav-link active" >Home</button>
                     </li>
                     <li class="list-group-item py-1">
                         <button onclick="document.location='/SEU/public/admin/reg/pre-enlistment'" class="nav-link" data-bs-toggle="pill">Pre-Enlistment</button>

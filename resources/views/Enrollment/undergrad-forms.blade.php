@@ -72,14 +72,6 @@
                 <input type="text" class="form-control" name="studAge" readonly>
             </div>
             <div class="col-md-6">
-            <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" name="studAge">
-            </div>
-            <div class="col-md-6">
-            <label for="exampleFormControlInput1" class="form-label">Password</label>
-                <input type="password" class="form-control" name="studPass">
-            </div>
-            <div class="col-md-6">
             <label for="studSHS" class="form-label">Senior High School</label>
                 <input type="text" class="form-control" name="studSHS">
             </div>

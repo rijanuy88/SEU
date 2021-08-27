@@ -14,10 +14,10 @@
 						<tr>
 							<th scope="col">YEAR LEVEL</th>
 							<th scope="col">SEMESTER</th>
-							<th scope="col">SUBJECT NAME</th>
-							<th scope="col">SUBJECT CODE</th>
+							<th scope="col">COURSE NAME</th>
+							<th scope="col">COURSE CODE</th>
 							<th scope="col">PRE-REQUISITE</th>
-							<th scope="col">CREDITS</th>
+							<th scope="col">UNITS</th>
 							<th scope="col">ACTION</th>
 						</tr>
 					</thead>
@@ -76,20 +76,20 @@
               <div><input type="text" class="form-control" name="semester" required></div>
 						</div>
             <div class="mb-3">
-              <div><label>Description</label></div>
-              <div><input type="text" class="form-control" name="desc" required></div>
+              <div><label>Course Name</label></div>
+              <div><input type="text" class="form-control" name="coursename" required></div>
 						</div>
             <div class="mb-3">
-              <div><label>Subject Code</label></div>
-              <div><input type="text" class="form-control" name="subjcode" required></div>
+              <div><label>Course Code</label></div>
+              <div><input type="text" class="form-control" name="coursecode" required></div>
 						</div>
 						<div class="mb-3">
               <div><label>Pre-Requisite</label></div>
               <div><input type="text" class="form-control" name="prerequisite"></div>
 						</div>
 						<div class="mb-3">
-							<div><label>Credits</label></div>
-              <div><input type="text" class="form-control" name="credits" required></div>
+							<div><label>Units</label></div>
+              <div><input type="text" class="form-control" name="units" required></div>
 						</div>
 						<div class="mb-3"></div>
 						<div class="modal-footer">
@@ -122,20 +122,20 @@
               <div><input type="text" class="form-control" name="semester" required></div>
 						</div>
             <div class="mb-3">
-              <div><label>Description</label></div>
-              <div><input type="text" class="form-control" name="desc" required></div>
+              <div><label>Course Name</label></div>
+              <div><input type="text" class="form-control" name="coursename" required></div>
 						</div>
             <div class="mb-3">
-              <div><label>Subject Code</label></div>
-              <div><input type="text" class="form-control" name="subjcode" required></div>
+              <div><label>Course Code</label></div>
+              <div><input type="text" class="form-control" name="coursecode" required></div>
 						</div>
 						<div class="mb-3">
               <div><label>Pre-Requisite</label></div>
               <div><input type="text" class="form-control" name="pre" required></div>
 						</div>
 						<div class="mb-3">
-							<div><label>Credits</label></div>
-              <div><input type="text" class="form-control" name="credits" required></div>
+							<div><label>Units</label></div>
+              <div><input type="text" class="form-control" name="units" required></div>
 						</div>
 						<div class="mb-3"></div>
 						<div class="form-check form-switch" >

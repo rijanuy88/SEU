@@ -12,10 +12,9 @@
 				<table class="table table-responsive table-sm" style="vertical-align:middle" id="students_table">
 					<thead>
 						<tr>
-							<th scope="col">COURSE CODE</th>
-                            <th scope="col">SUBJECT CODE</th>
-							<th scope="col">SUBJECT NAME</th>
-							<th scope="col">DIVISION</th>
+							<th scope="col">CLASS CODE</th>
+                            <th scope="col">COURSE CODE</th>
+							<th scope="col">COURSE NAME</th>
 							<th scope="col">SCHEDULE</th>
 							<th scope="col">TEACHER</th>
                             <th scope="col">SLOTS</th>
@@ -28,7 +27,6 @@
                             <td>4-301</td>
                             <td>CS 1130</td>
                             <td>Introduction to Computing</td>
-                            <td>CS</td>
                             <td>MW 7:40AM-9:10AM F610</td>
                             <td>Freires, Stony</td>
                             <td>40</td>
@@ -55,23 +53,23 @@
 		<div class="modal-dialog modal-dialog-scrollable">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="courseModalLabel">Edit Course</h5>
+					<h5 class="modal-title" id="courseModalLabel">Edit Class</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 					<form method="POST">
 						@csrf
 						<div class="mb-3">
-                            <div><label>Course Code</label></div>
-                            <div><input type="text" class="form-control" name="coursecode" readonly></div>
+                            <div><label>Class Code</label></div>
+                            <div><input type="text" class="form-control" name="classcode" readonly></div>
 						</div>
 						<div class="mb-3">
-							<div><label>Subject Code</label></div>
-                            <div><input type="text" class="form-control" name="subjcode" readonly></div>
+							<div><label>Course Code</label></div>
+                            <div><input type="text" class="form-control" name="coursecode" readonly></div>
 						</div>
                         <div class="mb-3">
-                            <div><label>Subject Name</label></div>
-                            <div><input type="text" class="form-control" name="subjname" readonly></div>
+                            <div><label>Course Name</label></div>
+                            <div><input type="text" class="form-control" name="coursename" readonly></div>
 						</div>
                         <div class="mb-3">
                             <div><label>Division</label></div>

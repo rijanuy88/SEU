@@ -131,10 +131,10 @@
                     <label for="exampleFormControlInput1" class="form-label">5th Year</label>
                     <input type="text" class="form-control" name="fifthyear" id="editfifthyr" placeholder="8" readonly>
                 </div>
-                <div class="mb-3">
+                {{-- <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label" >Total Students</label>
                     <input idtype="text" class="form-control" name="totStud" required id="totStud" placeholder="20" readonly>
-                </div>
+                </div> --}}
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#success" data-bs-dismiss="modal">Send</button>

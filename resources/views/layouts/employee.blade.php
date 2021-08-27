@@ -71,25 +71,26 @@
         z-index: 600;
     }
     
-    .sidebar-nav li button:hover {
+    .sidebar-nav li:hover {
         border-radius: 5px;
         text-decoration: none;
         color: #fff;
         background: rgba(255, 255, 255, 0.2);
     }
     
-    .sidebar-nav li button:active,
+    .sidebar-nav li button:hover,
     .sidebar-nav li button:focus {
         text-decoration: none;
         color: #fff;
-        background: #5c0d0d
     }
+
     .list-group-item>button{
         text-decoration:none;
         color: white;
+        background: #5c0d0d
     }
 
-    #sidebarMenu .li:active,
+    #sidebarMenu li:active,
     #sidebarMenu li:focus {
         text-decoration: none;
         color: #fff;
@@ -144,6 +145,10 @@
     .form-check-input::after{
         color:  #e19021;
     }
+
+    .list-group-item{
+        margin:2%;
+    }
 </style>
 
 
@@ -161,35 +166,35 @@
                 </a>
                 <hr>
                 <ul id="collapseExample1" class=" nav flex-column nav-pills collapse show list-group list-group-flush">
-                    <li class="list-group-item py-1">
-                        <button onclick="document.location='/SEU/public/admin/employee/home'"class="nav-link active" >Home</button>
+                    <li onclick="document.location='/SEU/public/admin/employee/home'" class="list-group-item py-1"> Home
+                        {{-- <button class="nav-link" >Home</button> --}}
                     </li>
-                    <li class="list-group-item py-1">
-                        <button onclick="document.location='/SEU/public/admin/reg/pre-enlistment'" class="nav-link" data-bs-toggle="pill">Pre-Enlistment</button>
+                    <li onclick="document.location='/SEU/public/admin/reg/pre-enlistment'" class="list-group-item py-1"> Pre-Enlistment
+                        {{-- <button class="nav-link" data-bs-toggle="pill">Pre-Enlistment</button> --}}
                     </li>
-                    <li class="list-group-item py-1">
-                        <button onclick="document.location='/SEU/public/admin/reg/curriculum'"class="nav-link" data-bs-toggle="pill">Curriculum</button>
+                    <li onclick="document.location='/SEU/public/admin/reg/curriculum'" class="list-group-item py-1"> Curriculum
+                        {{-- <button class="nav-link" data-bs-toggle="pill">Curriculum</button> --}}
                     </li>
-                    <li class="list-group-item py-1">
-                    <button onclick="document.location='/SEU/public/admin/reg/class-offerings'"class="nav-link" data-bs-toggle="pill">Class Offerings</button>
+                    <li onclick="document.location='/SEU/public/admin/reg/class-offerings'" class="list-group-item py-1"> Class Offerings
+                    {{-- <button class="nav-link" data-bs-toggle="pill">Class Offerings</button> --}}
                     </li>
-                    <li class="list-group-item py-1">
-                        <button onclick="document.location='/SEU/public/admin/reg/faculty'"class="nav-link" data-bs-toggle="pill">Faculty List</button>
+                    <li onclick="document.location='/SEU/public/admin/reg/faculty'" class="list-group-item py-1"> Faculty List
+                        {{-- <button class="nav-link" data-bs-toggle="pill">Faculty List</button> --}}
                     </li>
-                    <li class="list-group-item py-1">
-                        <button onclick="document.location='/SEU/public/admin/reg/staff'"class="nav-link" data-bs-toggle="pill">Non-Teaching Staff</button>
+                    <li onclick="document.location='/SEU/public/admin/reg/staff'" class="list-group-item py-1"> Non-Teaching Staff
+                        {{-- <button class="nav-link" data-bs-toggle="pill">Non-Teaching Staff</button> --}}
                     </li>
-                    <li class="list-group-item py-1">
-                        <button onclick="document.location='/SEU/public/admin/faculty/batch'"class="nav-link" data-bs-toggle="pill">Batch List</button>
+                    <li onclick="document.location='/SEU/public/admin/faculty/batch'" class="list-group-item py-1"> Batch List
+                        {{-- <button  class="nav-link"  data-bs-toggle="pill">Batch List</button> --}}
                     </li>
                     {{-- <li class="list-group-item py-1">
                         <a href="/SEU/public/admin/faculty/class" class="text-reset">Class List</a>
                     </li> --}}
-                    <li class="list-group-item py-1">
-                        <button onclick="document.location='/SEU/public/admin/finance/tuition-misc'" class="nav-link" data-bs-toggle="pill">Tuition & Misc. Fees</button>
+                    <li onclick="document.location='/SEU/public/admin/finance/tuition-misc'"  class="list-group-item py-1"> Tuition & Misc. Fees
+                        {{-- <button class="nav-link" data-bs-toggle="pill">Tuition & Misc. Fees</button> --}}
                     </li>
-                    <li class="list-group-item py-1">
-                        <button onclick="document.location='/SEU/public/'" class="nav-link" data-bs-toggle="pill" >Log out</button>
+                    <li onclick="document.location='/SEU/public/'"class="list-group-item py-1">Log out
+                        {{-- <button class="nav-link" data-bs-toggle="pill" >Log out</button> --}}
                     </li>
                 </ul>
             </div>

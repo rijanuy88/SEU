@@ -89,8 +89,8 @@ Route::get('/admin/reg/class-offerings', function () {
     return view('Registrar.classofferings');
 });
 
-Route::get('/admin/reg/faculty', function () {
-    return view('Registrar.facultylist');
+Route::get('/admin/employee-list', function () {
+    return view('Registrar.employeeList');
 });
 
 Route::get('/admin/reg/staff', function () {
@@ -115,7 +115,4 @@ Route::get('/admin/faculty/class-offerings', function () {
 
 Route::get('/admin/finance/tuition-misc', function () {
     return view('Finance.tuition&misc');
-});
-Route::get('/admin/finance/tuition-misc-student', function () {
-    return view('Finance.tuition&misc-student');
 });

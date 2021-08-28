@@ -81,7 +81,24 @@
 						</div>
 						<div class="mb-3">
 							<div><label>Schedule</label></div>
-                            <div><input type="text" class="form-control" name="sched" required></div>
+							<div class="input-group">
+								<span class="input-group-text">Date and Time</span>
+								<select type="text" aria-label="First name" class="form-select" required>
+									<option selected></option>
+									<option>MW</option>
+									<option>TTH</option>
+									<option>F</option>
+									<option>Sat</option>
+								</select>
+								<select type="text" aria-label="Last name" class="form-select" required>
+									<option selected></option>
+									<option>8:00AM-9:30AM</option>
+									<option>9:40AM-11:10AM</option>
+									<option>11:20AM-1:40PM</option>
+									<option>1:50PM-3:10PM</option>
+									<option>5:00PM-7:00PM</option>
+								</select>
+							</div>
 						</div>
                         <div class="mb-3">
                             <div><label>Room</label></div>

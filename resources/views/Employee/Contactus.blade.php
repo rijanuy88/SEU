@@ -68,14 +68,14 @@
                 <label for="inputAddress2" class="form-label">Year Graduated</label>
                 <input type="text" class="form-control" id="yearGraduated">
             </div>
-            <div class="col-4">
+            {{-- <div class="col-4">
                 <label for="inputAddress2" class="form-label">Specialization</label>
                 <select id="specialization" class="form-select">
                 <option selected>Choose...</option>
                 <option>...</option>
                 </select>
-            </div>
-            <div class="col-4">
+            </div> --}}
+            {{-- <div class="col-4">
                 <label for="inputAddress2" class="form-label">Department</label>
                 <select id="department" class="form-select">
                 <option selected>Choose...</option>
@@ -88,7 +88,7 @@
                 <option selected>Choose...</option>
                 <option>...</option>
                 </select>
-            </div>
+            </div> --}}
             <div class="col-12">
                 <button type="submit" class="btn btn-custom">Submit</button>
             </div>

@@ -86,6 +86,7 @@
 						<div class="mb-3">
               <div><label>Pre-Requisite</label></div>
               <div><input type="text" class="form-control" name="prerequisite"></div>
+			  <input type="text" value="" data-role="tagsinput" placeholder="Add tags" />
 						</div>
 						<div class="mb-3">
 							<div><label>Units</label></div>
@@ -235,6 +236,11 @@ window.onload = function() {
 //   }
 // });
 
-
-
 </script>
+@section('scripts')
+	<script src="../../js/sidebar.js"></script>
+@endsection
+
+@section('styles')
+	<link rel="stylesheet" href="../../css/tags.css">
+@endsection

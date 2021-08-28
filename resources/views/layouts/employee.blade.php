@@ -17,11 +17,13 @@
     <!-- Bootstrap Icons CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    {{--tagging --}}
+    {{-- tagging
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    {{-- <script src="../../js/stud.js"></script> --}}
-    
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> --}}
+
+        {{-- tagging --}}
+    <script src="../../js/sidebar.js"></script>
+    <link rel="stylesheet" href="../../css/tags.css">
     {{-- <script type="application/javascript">
         $(document).ready(function(){
             $('ul li button').click(function(){
@@ -178,11 +180,8 @@
                     <li onclick="document.location='/SEU/public/admin/reg/class-offerings'" class="list-group-item py-1"> Class Offerings
                     {{-- <button class="nav-link" data-bs-toggle="pill">Class Offerings</button> --}}
                     </li>
-                    <li onclick="document.location='/SEU/public/admin/reg/faculty'" class="list-group-item py-1"> Faculty List
+                    <li onclick="document.location='/SEU/public/admin/employee-list'" class="list-group-item py-1"> Employee List
                         {{-- <button class="nav-link" data-bs-toggle="pill">Faculty List</button> --}}
-                    </li>
-                    <li onclick="document.location='/SEU/public/admin/reg/staff'" class="list-group-item py-1"> Non-Teaching Staff
-                        {{-- <button class="nav-link" data-bs-toggle="pill">Non-Teaching Staff</button> --}}
                     </li>
                     <li onclick="document.location='/SEU/public/admin/faculty/batch'" class="list-group-item py-1"> Batch List
                         {{-- <button  class="nav-link"  data-bs-toggle="pill">Batch List</button> --}}
@@ -195,7 +194,10 @@
                     </li>
                     <li onclick="document.location='/SEU/public/'"class="list-group-item py-1">Log out
                         {{-- <button class="nav-link" data-bs-toggle="pill" >Log out</button> --}}
+                        <i class="bi bi-box-arrow-right"></i>
                     </li>
+
+                    
                 </ul>
             </div>
         </div>
@@ -209,18 +211,21 @@
         <div class="container-fluid " >
         <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
             
-        </a>
+        </button>
         </div>
+        {{-- <div>
+            <i class="bi bi-box-arrow-right"></i> 
+        </div> --}}
     </nav>
 </header>
 
 <!--Main Navigation-->
-
+    
     <!--Main layout-->
     <main style="margin-top: 10%">
     <div class="container pt-4">
+        @yield('styles')
         @yield('content')
         @yield('modals')
         @yield('scripts')

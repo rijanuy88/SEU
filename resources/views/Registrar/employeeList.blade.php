@@ -1,22 +1,22 @@
 @extends('layouts.employee')
 
-@section('title', 'Non-Teaching Staff')
+@section('title', 'Faculty')
 
 @section('content')
 	<div class="container">
 		<div class="card">
 			<div class="card-header text-white" style="background-color: #e19021">
-				Non-Teaching Staff
+				Employee List
 			</div>
 			<div class="card-body" style="overflow-x:auto">
 				<table class="table table-responsive table-sm" style="vertical-align:middle" id="faculty_table">
 					<thead>
 						<tr>
-                            <th scope="col">LAST NAME</th>
+							<th scope="col">LAST NAME</th>
                             <th scope="col">FIRST NAME</th>
 							<th scope="col">MIDDLE INITIAL</th>
 							<th scope="col">SUFFIX</th>
-                            {{-- <th scope="col">DIVISION</th> --}}
+                            <th scope="col">CATEGORY</th>
 							<th scope="col">DEPARTMENT</th>
 							<th scope="col">DESIGNATION</th>
                             <th scope="col">ACTION</th>
@@ -28,12 +28,12 @@
 							<td>Jose Mari</td>
 							<td>V.</td>
 							<td></td>
-                            {{-- <td>CS</td> --}}
+                            <td>Teaching</td>
                             <td>Information Systems</td>
                             <td>Department Chair</td>
                             <td>
-							    <a type="button" class="btn btn-info btn-sm"><i class="bi bi-eye"></i></a>
-								<button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editstaffModal"><i class="bi bi-pencil-square"></i></button>
+							<a type="button" class="btn btn-info btn-sm"><i class="bi bi-eye"></i></a>
+								<button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editEmployeeModal"><i class="bi bi-pencil-square"></i></button>
 								<button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
 							</td>
 						</tr>
@@ -41,7 +41,7 @@
 				</table>
 			</div>
             <div class="card-footer">
-                <button type="button" class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#addstaffModal">Add</button>
+                <button type="button" class="btn btn-custom btn-sm" data-bs-toggle="modal" data-bs-target="#addEmployeeModal">Add</button>
             </div>
 		</div>
 	</div>
@@ -49,11 +49,11 @@
 
 @section('modals')
 	<!--Edit Modal -->
-	<div class="modal fade" id="editstaffModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+	<div class="modal fade" id="editEmployeeModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
 		<div class="modal-dialog ">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="courseModalLabel">Edit Staff</h5>
+					<h5 class="modal-title" id="courseModalLabel">Edit Employee</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -75,15 +75,15 @@
                             <div><label>Suffix</label></div>
                             <div><input type="text" class="form-control" name="suffix" required></div>
 						</div>
-						{{-- <div class="mb-3">
-                            <div><label>Division</label></div>
+                        <div class="mb-3">
+                            <div><label>Category</label></div>
                             <div>
-                                <select id="division" class="form-select" required>
+                                <select id="category" class="form-select" required>
                                     <option></option>
                                     <option>...</option>
                                 </select>
                             </div>
-                        </div> --}}
+                        </div>
                         <div class="mb-3">
                             <div><label>Department</label></div>
                             <div>
@@ -105,7 +105,7 @@
 						<div class="mb-3"></div>
 						<div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-custom" id="add">Add</button>
+                            <button type="button" class="btn btn-custom" id="save">Save</button>
                         </div>
 					</form>
 				</div>
@@ -113,11 +113,11 @@
 		</div>
 	</div>
 	<!--Add Modal -->
-	<div class="modal fade" id="addstaffModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+	<div class="modal fade" id="addEmployeeModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
 		<div class="modal-dialog ">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="courseModalLabel">Add Staff</h5>
+					<h5 class="modal-title" id="courseModalLabel">Add Employee</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -139,15 +139,15 @@
                             <div><label>Suffix</label></div>
                             <div><input type="text" class="form-control" name="suffix" required></div>
 						</div>
-						{{-- <div class="mb-3">
-                            <div><label>Division</label></div>
+						<div class="mb-3">
+                            <div><label>Category</label></div>
                             <div>
-                                <select id="division" class="form-select" required>
+                                <select id="category" class="form-select" required>
                                     <option></option>
                                     <option>...</option>
                                 </select>
                             </div>
-                        </div> --}}
+                        </div>
                         <div class="mb-3">
                             <div><label>Department</label></div>
                             <div>

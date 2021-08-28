@@ -16,7 +16,7 @@
                             <th scope="col">FIRST NAME</th>
 							<th scope="col">MIDDLE INITIAL</th>
 							<th scope="col">SUFFIX</th>
-                            <th scope="col">DIVISION</th>
+                            {{-- <th scope="col">DIVISION</th> --}}
 							<th scope="col">DEPARTMENT</th>
 							<th scope="col">DESIGNATION</th>
                             <th scope="col">ACTION</th>
@@ -28,7 +28,7 @@
 							<td>Jose Mari</td>
 							<td>V.</td>
 							<td></td>
-                            <td>CS</td>
+                            {{-- <td>CS</td> --}}
                             <td>Information Systems</td>
                             <td>Department Chair</td>
                             <td>

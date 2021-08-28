@@ -16,7 +16,7 @@
                             <th scope="col">FIRST NAME</th>
 							<th scope="col">MIDDLE INITIAL</th>
 							<th scope="col">SUFFIX</th>
-                            <th scope="col">DIVISION</th>
+                            {{-- <th scope="col">DIVISION</th> --}}
 							<th scope="col">DEPARTMENT</th>
 							<th scope="col">DESIGNATION</th>
                             <th scope="col">ACTION</th>
@@ -28,7 +28,7 @@
 							<td>Jose Mari</td>
 							<td>V.</td>
 							<td></td>
-                            <td>CS</td>
+                            {{-- <td>CS</td> --}}
                             <td>Information Systems</td>
                             <td>Department Chair</td>
                             <td>
@@ -75,7 +75,7 @@
                             <div><label>Suffix</label></div>
                             <div><input type="text" class="form-control" name="suffix" required></div>
 						</div>
-						<div class="mb-3">
+						{{-- <div class="mb-3">
                             <div><label>Division</label></div>
                             <div>
                                 <select id="division" class="form-select" required>
@@ -83,7 +83,7 @@
                                     <option>...</option>
                                 </select>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="mb-3">
                             <div><label>Department</label></div>
                             <div>
@@ -139,7 +139,7 @@
                             <div><label>Suffix</label></div>
                             <div><input type="text" class="form-control" name="suffix" required></div>
 						</div>
-						<div class="mb-3">
+						{{-- <div class="mb-3">
                             <div><label>Division</label></div>
                             <div>
                                 <select id="division" class="form-select" required>
@@ -147,7 +147,7 @@
                                     <option>...</option>
                                 </select>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="mb-3">
                             <div><label>Department</label></div>
                             <div>

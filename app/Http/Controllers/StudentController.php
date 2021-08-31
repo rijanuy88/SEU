@@ -64,6 +64,7 @@ class StudentController extends Controller
             'studCourse2'=> $request->studCourse2,
             'studCourse3'=> $request->studCourse3,
         ]);
+        return view('Enrollment.undergrad-forms');
     }
 
     /**

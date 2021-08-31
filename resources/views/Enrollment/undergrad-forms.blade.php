@@ -14,7 +14,7 @@
 
         <div class="col-md-12">
         </div>
-            <div class="col-md-4" >
+            <div class="col-md-4" hidden>
                 <label for="exampleFormControlInput1" class="form-label">Applicant Id</label >
                 <input type="text" class="form-control" name="applicantID" placeholder="">
             </div>
@@ -46,13 +46,14 @@
             <label for="exampleFormControlInput1" class="form-label">Address</label>
                 <input type="text" class="form-control" name="studAddress">
             </div>
+            <form class="row g-3" method="POST" action="{{ route('undergrad-forms.store')  }}">
             <div class="col-6">
             <label for="exampleFormControlInput1" class="form-label">Emergency Contact Name (Parent or Guardian)</label>
                 <input type="text" class="form-control" name="emerName">
             </div>
             <div class="col-6">
             <label for="exampleFormControlInput1" class="form-label">Emergency Contact Relationship </label>
-                <select id="emerRel" class="form-select">
+                <select id="emerRel" class="form-select" name="emerRel">
                 <option selected>Choose...</option>
                 <option>Parent</option>
                 <option>Guardian</option>
@@ -67,9 +68,10 @@
             <label for="exampleFormControlInput1" class="form-label">Emergency Contact Address </label>
                 <input type="text" class="form-control" name="emerAdd">
             </div>
+            </form>
             <div class="col-6">
             <label for="exampleFormControlInput1" class="form-label">Birth Date</label>
-                <input type="date" class="form-control" name="studBirthDate" id="studBday" onclick = "ageCalculator()">
+                <input type="date" class="form-control" name="studBirthDate" id="studBday">
             </div>
             <div class="col-md-6">
             <label for="exampleFormControlInput1" class="form-label">Age</label>
@@ -82,8 +84,8 @@
             <div class="col-md-4">
                 <label for="studYearGrad" class="form-label"> Year Graduated</label>
                 <select id="studYearGrad" class="form-select" name="studYearGrad">
-                <option selected>Choose...</option>
-                <option>...</option>
+                    <option selected>Choose...</option>
+                    <option>...</option>
                 </select>
             </div>
             <div class="col-md-4">
@@ -110,7 +112,7 @@
             </div>
 
             <div class="col-12" style="padding-top:2%">
-                <button type="submit" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick = "ageCalculator()">Submit</button>
+                <button type="submit" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
                 <a href="/SEU/public/status"><button type="button" class="btn btn-dark" disabled>Find Status</button></a>
             </div>
         </form>

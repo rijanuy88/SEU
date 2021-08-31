@@ -73,7 +73,7 @@
             </div>
             <div class="col-md-6">
             <label for="exampleFormControlInput1" class="form-label">Age</label>
-                <input type="text" class="form-control" name="studAge" id="sage" >
+                <input type="text" class="form-control" name="studAge" id="sage" readonly>
             </div>
             <div class="col-md-6">
             <label for="studSHS" class="form-label">Senior High School</label>

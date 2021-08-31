@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Student;
+use Carbon\Carbon;
 
 class StudentController extends Controller
 {
@@ -40,6 +41,11 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         // dd($request);
+
+        // calc age
+        $dob = Carbon::parse($request->studBirthDate);
+        $age= $dob->age;
+
         //save student infos
         Student::create([
             'applicantID' => $request->applicantID,
@@ -51,7 +57,7 @@ class StudentController extends Controller
             'studMobileNumber' => $request->studMobileNumber,
             'studAddress' => $request->studAddress,
             'studBirthDate' => $request->studBirthDate,
-            'studAge'=> $request->studAge,
+            'studAge'=> $age,
             'studSHS'=> $request->studSHS,
             'studYearGrad'=> $request->studYearGrad,
             'studCourse1'=> $request->studCourse1,

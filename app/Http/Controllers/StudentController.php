@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Student;
 
 class StudentController extends Controller
 {
@@ -11,9 +12,11 @@ class StudentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
     public function index()
     {
-        //
+        
+        return view('Enrollment.undergrad-forms');
     }
 
     /**
@@ -21,6 +24,7 @@ class StudentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
     public function create()
     {
         //
@@ -32,9 +36,28 @@ class StudentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
     public function store(Request $request)
     {
-        //
+        // dd($request);
+        //save student infos
+        Student::create([
+            'applicantID' => $request->applicantID,
+            'studLastName' => $request->studLastName,
+            'studFirstName' => $request->studFirstName,
+            'studMiddleName' => $request->studMiddleName,
+            'studSuffix' => $request->studSuffix,
+            'studLandline' => $request->studLandline,
+            'studMobileNumber' => $request->studMobileNumber,
+            'studAddress' => $request->studAddress,
+            'studBirthDate' => $request->studBirthDate,
+            'studAge'=> $request->studAge,
+            'studSHS'=> $request->studSHS,
+            'studYearGrad'=> $request->studYearGrad,
+            'studCourse1'=> $request->studCourse1,
+            'studCourse2'=> $request->studCourse2,
+            'studCourse3'=> $request->studCourse3,
+        ]);
     }
 
     /**

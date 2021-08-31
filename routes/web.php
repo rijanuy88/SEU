@@ -30,9 +30,12 @@ Route::get('/pre-enlistment', function () {
     return view('Enrollment.pre-enlistment');
 });
 
-Route::get('/undergrad-forms', function () {
-    return view('Enrollment.undergrad-forms');
-});
+
+// Route::get('/undergrad-forms', function () {
+//     return view('Enrollment.undergrad-forms');
+// });
+Route::resource('/undergrad-forms', App\Http\Controllers\StudentController::class);
+
 Route::get('/gradschool-forms', function () {
     return view('Enrollment.gradschool-forms');
 });

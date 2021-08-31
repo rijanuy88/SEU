@@ -11,25 +11,26 @@ class CreateStudentsTable extends Migration
      *
      * @return void
      */
+    // create the table
     public function up()
     {
         Schema::create('students', function (Blueprint $table) {
             $table->id();
-            $table->primary('applicantID');
-            $table->string('lastName');
-            $table->string('firstName');
-            $table->string('middleName');
-            $table->string('suffix');
-            $table->string('landline');
-            $table->string('mobileNumber');
-            $table->string('address');
-            $table->string('birthdate');
-            $table->string('age');
-            $table->string('shs');
-            $table->string('yearGraduated');
-            $table->string('course1');
-            $table->string('course2');
-            $table->string('course3');
+            $table->integer('applicantID')->unique()->nullable();
+            $table->string('studLastName');
+            $table->string('studFirstName');
+            $table->string('studMiddleName');
+            $table->string('studSuffix')->nullable();
+            $table->string('studLandline');
+            $table->string('studMobileNumber');
+            $table->string('studAddress');
+            $table->date('studBirthDate');
+            $table->integer('studAge');
+            $table->string('studSHS');
+            $table->string('studYearGrad');
+            $table->string('studCourse1');
+            $table->string('studCourse2');
+            $table->string('studCourse3');
             $table->timestamps();
         });
     }
@@ -39,6 +40,7 @@ class CreateStudentsTable extends Migration
      *
      * @return void
      */
+    // delete the table
     public function down()
     {
         Schema::dropIfExists('students');

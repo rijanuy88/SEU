@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {{-- favicon --}}
+    <link rel="shortcut icon" type="image/jpg" href="{{ asset('/assets/SEU Logo.png') }}"/>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">

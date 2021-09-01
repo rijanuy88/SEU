@@ -16,8 +16,9 @@ class StudentController extends Controller
     
     public function index()
     {
-        
-        return view('Enrollment.undergrad-forms');
+        $students = Student::all();
+        // return view('welcome', compact('students'));
+        return view('Enrollment.undergrad-forms', compact('students'));
     }
 
     /**

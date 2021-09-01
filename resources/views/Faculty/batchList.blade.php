@@ -3,6 +3,29 @@
 @section('title', 'Batch List')
 
 @section('content')
+
+<div class="container">
+    <div class="card  mx-auto">
+        <div class="card-header text-white" style="background-color: #e19021">
+            Search Student
+        </div>
+            <div div class="card-body">
+                <div class="mb-3">
+                    <label for="classSearch" class="form-label">First Name</label>
+                    <input type="text" id="batchFname" class="form-control" placeholder="ex. John">
+                    &nbsp
+                    <label for="classSearch" class="form-label">Last Name</label>
+                    <input type="text" id="batchLname" class="form-control" placeholder="ex. Doe">
+                    &nbsp
+                <div>
+                <button type="button" class="btn btn-primary" style="background-color: #e19021 " >Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+&nbsp
+
 	<div class="container">
 		<div class="card">
 			<div class="card-header text-white" style="background-color: #e19021">

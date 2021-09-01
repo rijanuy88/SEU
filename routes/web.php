@@ -88,7 +88,9 @@ Route::get('/my-class-offerings', function () {
 Route::get('/admin/reg/pre-enlistment', function () {
     return view('Registrar.pre-enlistment');
 });
-
+Route::get('/admin/reg/programs', function () {
+    return view('Registrar.programs');
+});
 Route::get('/admin/reg/class-offerings', function () {
     return view('Registrar.classofferings');
 });

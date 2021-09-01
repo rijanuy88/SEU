@@ -12,6 +12,12 @@
         <a href="/SEU/public/pre-enlistment"><button type="button" class="col-12 btn btn-custom " >Back</button></a>        </button>
         </div>
 
+        <div>
+            <b><h1 style="color:#6a1717">Pre-Enlistment Form</h1></b>
+            <h5>Undergraduate Programs</h5>
+        </div>
+        <hr>
+
         <div class="col-md-12">
         </div>
             {{-- <div class="col-md-4" hidden>
@@ -73,15 +79,17 @@
             <label for="exampleFormControlInput1" class="form-label">Birth Date</label>
                 <input type="date" class="form-control" name="studBirthDate" id="studBday">
             </div>
+            @foreach($students as $student)
             <div class="col-md-6">
             <label for="exampleFormControlInput1" class="form-label">Age</label>
-                <input type="text" class="form-control" name="studAge" id="sage" readonly>
+                <input type="text" class="form-control" name="studAge" id="sage" readonly placeholder="{{ $student->studAge }}" />
             </div>
+            @endforeach
             <div class="col-md-6">
             <label for="studSHS" class="form-label">Senior High School</label>
                 <input type="text" class="form-control" name="studSHS" >
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <label for="studYearGrad" class="form-label"> Year Graduated</label>
                 <select id="studYearGrad" class="form-select" name="studYearGrad">
                     <option selected>Choose...</option>

@@ -2,12 +2,34 @@
 
 @section('title', 'Curriculum')
 
+
+
 @section('content')
 <div class="container">
+	<div class="card  mx-auto">
+		<div class="card-header text-white" style="background-color: #e19021">
+			Search Program and Year
+		</div>
+			<div div class="card-body">
+					<div class="mb-3">
+					<label for="progYearSearch" class="form-label">Search Program and Year</label>
+					<input type="text" id=" progYearSearch" class="form-control" placeholder="ex. BS Computer Science 2019">
+					&nbsp
+					<div>
+					<button type="button" class="btn btn-primary" style="background-color: #e19021 " >Search</button>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+&nbsp
+
+<div class="container">	
 		<div class="card">
 			<div class="card-header text-white" style="background-color: #e19021">
 				Curriculum 
 			</div>
+			
 			<div class="card-body" style="overflow-x:auto">
 				<table class="table table-responsive table-sm" style="vertical-align:middle" id="faculty_table">
 					<thead>
@@ -18,6 +40,7 @@
 							<th scope="col">COURSE CODE</th>
 							<th scope="col">PRE-REQUISITE</th>
 							<th scope="col">UNITS</th>
+							<th scope="col">YEAR</th>
 							<th scope="col">ACTION</th>
 						</tr>
 					</thead>
@@ -29,6 +52,7 @@
 							<td>CS 1001</td>
 							<td></td>
 							<td>3.0</td>
+							<td>2019</td>
 							<td>
 								<button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editcurriculumModal"><i class="bi bi-pencil-square"></i></button>
 								<button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
@@ -89,8 +113,12 @@
 			  <input type="text" value="" data-role="tagsinput" placeholder="Add tags" />
 						</div>
 						<div class="mb-3">
-							<div><label>Units</label></div>
+			  <div><label>Units</label></div>
               <div><input type="text" class="form-control" name="units" required></div>
+						</div>
+						<div class="mb-3"></div>
+			  <div><label>Implementation Year</label></div>
+              <div><input type="text" class="form-control" name="impYear" required></div>
 						</div>
 						<div class="mb-3"></div>
 						<div class="modal-footer">
@@ -143,6 +171,11 @@
 							<input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
 							<label class="form-check-label" for="flexSwitchCheckDefault">Laboratory</label>
 						</div>
+			  <div class="mb-3"></div>
+			  <div><label>Implementation Year</label></div>
+              <div><input type="text" class="form-control" name="impYear" required></div>
+						</div>
+						<div class="mb-3"></div>
 						<div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               <button type="button" class="btn btn-custom" id="add">Save</button>

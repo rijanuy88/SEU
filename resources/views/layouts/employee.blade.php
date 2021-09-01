@@ -80,6 +80,7 @@
         text-decoration: none;
         color: #fff;
         background: rgba(255, 255, 255, 0.2);
+        cursor: pointer;
     }
     
     .sidebar-nav li button:hover,
@@ -174,6 +175,9 @@
                         {{-- <button class="nav-link" >Home</button> --}}
                     </li>
                     <li onclick="document.location='/SEU/public/admin/reg/pre-enlistment'" class="list-group-item py-1"> Pre-Enlistment
+                        {{-- <button class="nav-link" data-bs-toggle="pill">Pre-Enlistment</button> --}}
+                    </li>
+                    <li onclick="document.location='/SEU/public/admin/reg/programs'" class="list-group-item py-1"> Programs 
                         {{-- <button class="nav-link" data-bs-toggle="pill">Pre-Enlistment</button> --}}
                     </li>
                     <li onclick="document.location='/SEU/public/admin/reg/curriculum'" class="list-group-item py-1"> Curriculum

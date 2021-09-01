@@ -13,6 +13,12 @@
         <a href="/SEU/public/pre-enlistment"><button type="button" class="col-12 btn btn-custom " >Back</button></a>        </button>
         </div>
 
+        <div>
+            <b><h1 style="color:#6a1717">Pre-Enlistment Form</h1></b>
+            <h5>Post-Graduate Programs</h5>
+        </div>
+        <hr>
+
         <div class="col-md-12">
         </div>
 

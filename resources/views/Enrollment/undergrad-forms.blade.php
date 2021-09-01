@@ -14,10 +14,10 @@
 
         <div class="col-md-12">
         </div>
-            <div class="col-md-4" hidden>
+            {{-- <div class="col-md-4" hidden>
                 <label for="exampleFormControlInput1" class="form-label">Applicant Id</label >
                 <input type="text" class="form-control" name="applicantID" placeholder="">
-            </div>
+            </div> --}}
             <div class="col-md-4">
                 <label for="exampleFormControlInput1" class="form-label">Last Name</label>
                 <input type="text" class="form-control" name="studLastName" required >
@@ -46,7 +46,7 @@
             <label for="exampleFormControlInput1" class="form-label">Address</label>
                 <input type="text" class="form-control" name="studAddress">
             </div>
-            <form class="row g-3" method="POST" action="{{ route('undergrad-forms.store')  }}">
+            {{-- <form class="row g-3" method="POST" action="{{ route('undergrad-forms.store')  }}"> --}}
             <div class="col-6">
             <label for="exampleFormControlInput1" class="form-label">Emergency Contact Name (Parent or Guardian)</label>
                 <input type="text" class="form-control" name="emerName">
@@ -68,7 +68,7 @@
             <label for="exampleFormControlInput1" class="form-label">Emergency Contact Address </label>
                 <input type="text" class="form-control" name="emerAdd">
             </div>
-            </form>
+            {{-- </form> --}}
             <div class="col-6">
             <label for="exampleFormControlInput1" class="form-label">Birth Date</label>
                 <input type="date" class="form-control" name="studBirthDate" id="studBday">

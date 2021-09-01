@@ -35,7 +35,7 @@ Route::get('/pre-enlistment', function () {
 //     return view('Enrollment.undergrad-forms');
 // });
 Route::resource('/undergrad-forms', App\Http\Controllers\StudentController::class);
-Route::resource('/undergrad-forms', App\Http\Controllers\GuardianController::class);
+// Route::resource('/undergrad-forms', App\Http\Controllers\GuardianController::class);
 
 Route::get('/gradschool-forms', function () {
     return view('Enrollment.gradschool-forms');
